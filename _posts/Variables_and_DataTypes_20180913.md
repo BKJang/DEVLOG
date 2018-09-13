@@ -96,13 +96,15 @@ console.log(a === b); //false
 
 #### 참조 자료형(Object)
 
+- - -
+
 자바스크립트의 객체는 `key : value` 형태의 property를 저장하는 컨테이너이다.
 자바스크립트 객체는 모두 **Object 객체를 상속**하고 있다.
 또한, **객체의 property는 동적으로 생성하고 삭제 및 수정이 가능**하다.
 
 ```sh
-var obj = { //obj 객체 생성
-	stu1 : 'Jang'
+var obj = {
+    stu1 : 'Jang'
     stu2 : 'Kim'
     stu3 : 'Kang'
 };
@@ -125,13 +127,14 @@ console.log(obj.stu2); //Kim
 
 ```
 
+
 추가적으로 객체에 접근하는 방법에 대해 보면 다음과 같다.
 
 * `in` 연산자 혹은 `hasOwnProperty`메서드를 통해서 특정 프로퍼티 이름이 객체에 존재하는지 알 수 있다.
 * `for in` 문을 통해 객체에 대해 loop를 돌릴 수 있다.
 
 ```sh
-var obj2 = { //obj2 객체 생성
+var obj2 = {
 	stu1 : 'Jang'
     stu2 : 'Kim'
     stu3 : 'Kang'
@@ -143,12 +146,13 @@ console.log(hasOwnProperty('stu1')); //true
 var prop;
 for (prop in obj2) {
 	console.log(prop, obj2[prop]);
-    /* 출력
+}
+
+/* 출력
     stu1 Jang
     stu2 Kim
     stu3 Kang
-    */
-}
+*/
 ```
 
 * * *
