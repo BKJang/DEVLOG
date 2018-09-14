@@ -157,6 +157,42 @@ for (prop in obj2) {
 
 * * *
 
+### Call By Reference
+
+- - -
+
+기본 타입과 참조 타입의 경우 함수 호출 방식에 차이가 있다.
+기본 타입의 경우 값에 의한 호출 방식(Call By Value)으로 동작하고, 참조 타입의 경우 참조에 의한 호출 방식(Call By Reference)으로 동작한다.
+코드로 차이를 살펴보자.
+
+```sh
+var num = 100;
+var obj1 = { value : 100 };
+
+var callFunc = function(num, obj){
+    num = 50;
+    obj.value = 50;
+
+    console.log(num);
+    console.log(obj);
+}
+
+callFunc(num, obj1);
+
+console.log(num);
+console.log(obj1);
+
+/*
+50
+{ value : 50 }
+100
+{ value : 50 }
+*/
+```
+코드를 보면 callFunc 함수를 호출한 이후, 기본 타입인 num변수는 값이 변하지 않지만, 참조 타입인 obj1객체의 value 프로퍼티의 경우에는 값이 변하는 것을 볼 수 있다.
+
+그 이유는 객체의 경우, callFunc 함수의 파라미터로 obj1이 전달될 때 obj1이 참조하는 객체의 위치 값이 그대로 전달되기 때문이다.
+
 <br/>
 
 #### Reference
