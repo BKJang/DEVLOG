@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[JavaScript] 변수와 자료형"
-subtitle:   "[JavaScript] 변수와 자료형"
+title:  "[JavaScript] 2. 변수와 자료형"
+subtitle:   "[JavaScript] 2. 변수와 자료형"
 categories: JavaScript
 ---
 
@@ -44,7 +44,37 @@ var h = function(){}; //함수
 * **초기화** : 위와 같이 변수의 선언과 동시에 할당하는 과정을 **초기화**라고 한다.
 
 추가적으로 var은 **함수형 스코프(function-scope)**이기 때문에 지역 변수의 선언은 함수 내에서만 의미가 있다.
-이 부분은 차후 Hoisting과 관련하여 자세히 설명하도록 하겠다.
+
+이쯤에서 **변수의 호이스팅(Hositing)** 의 개념을 알고 넘어갈 필요가 있다.
+자바스크립트는 변수의 선언부를 해당 스코프의 가장 위로 끌어올린다.
+코드로 살펴보자.
+
+```sh
+console.log(x);
+
+var x = 1000;
+
+console.log(x);
+
+/*
+undefined
+1000
+*/
+```
+위의 출력 결과를 보면 가장 첫 줄의 `console.log(x)`는 에러가 나야할 것 같지만, undefined로 출력이 된다.
+이는 자바스크립트에서의 호이스팅이라는 개념으로 인해 변수의 선언부가 최상위로 끌어올려져서 나타나는 현상이다.
+즉, 자바스크립트에서는 위와 같은 코드를 다음과 같이 해석한다.
+
+```sh
+var x;
+
+console.log(x);
+
+x = 1000;
+
+console.log(x);
+
+```
 
 <br/>
 
