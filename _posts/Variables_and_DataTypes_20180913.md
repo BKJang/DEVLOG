@@ -185,9 +185,7 @@ for (prop in obj2) {
 */
 ```
 
-### Call By Reference
-
-- - -
+## Call By Reference
 
 기본 타입과 참조 타입의 경우 함수 호출 방식에 차이가 있다.
 기본 타입의 경우 값에 의한 호출 방식(Call By Value)으로 동작하고, 참조 타입의 경우 참조에 의한 호출 방식(Call By Reference)으로 동작한다.
