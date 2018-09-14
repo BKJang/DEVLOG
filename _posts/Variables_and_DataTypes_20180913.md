@@ -185,8 +185,6 @@ for (prop in obj2) {
 */
 ```
 
-* * *
-
 ### Call By Reference
 
 - - -
@@ -225,6 +223,8 @@ console.log(obj1);
 
 <br/>
 
+
+* * *
 #### Reference
 - 인사이드 자바스크립트 (송형주, 고형준)
 
