@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[JavaScript] 자바스크립트의 컨셉"
-subtitle:   "[JavaScript] 자바스크립트의 컨셉"
+title:  "[JavaScript] 1. 자바스크립트의 컨셉"
+subtitle:   "[JavaScript] 1. 자바스크립트의 컨셉"
 categories: JavaScript
 ---
 
