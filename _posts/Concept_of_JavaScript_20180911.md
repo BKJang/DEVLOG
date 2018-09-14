@@ -26,7 +26,7 @@ categories: JavaScript
 
 
 
-
+<br/>
 
 ## 함수형 프로그래밍
 
@@ -47,6 +47,7 @@ categories: JavaScript
 
 하지만, 어떤 것이든 과하면 안되듯이 함수형 프로그래밍이 과해지면 가독성이 떨어져 제 3자가 코드를 봤을 때, 한 눈에 알아보기 쉽지 않다는 단점이 있다.
 
+<br/>
 
 ## JavaScript의 핵심 개념
 
