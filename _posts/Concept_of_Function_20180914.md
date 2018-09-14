@@ -66,6 +66,8 @@ console.log(factorial(4)); Uncaught ReferenceError : factorial is not defined
 
 이에 따라 factorial함수를 호출했을 때 결과 값이 잘 나올거 같지만, 위에서 말했듯이 **함수 표현식에서 함수명을 정의햇을 때, 외부에서 해당 함수명을 사용할 수 없기 때문에 factorial은 정의되지 않았다는 에러가 발생**한다.
 
+<br/>
+
 ## 함수 호이스팅
 
 **함수 선언문 방식**과 **함수 표현식 방식**의 가장 큰 차이 중 하나는 **함수 호이스팅**이다.
