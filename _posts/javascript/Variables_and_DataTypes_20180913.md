@@ -4,7 +4,7 @@ title:  "[JavaScript] 2. 변수와 자료형"
 date:   2018-09-11
 excerpt: "변수와 자료형에 대해서"
 tag:
-[javascript]
+- javascript
 comments: true
 ---
 
@@ -22,7 +22,7 @@ comments: true
 var 변수에는 문자열, 숫자와 같은 데이터 이외에도 객체, 함수를 정의할 수 있다.
 이 부분이 Java와 같이 int, String 변수의 타입이 있는 **정적 타입의 언어**와 다른 대표적인 부분이라고 볼 수 있다.
 
-```sh
+```javascript
 var a = ''; //문자열
 var b = 0; //숫자
 var c = true; //boolean
@@ -49,7 +49,7 @@ var h = function(){}; //함수
 자바스크립트는 변수의 선언부를 해당 스코프의 가장 위로 끌어올린다.
 코드로 살펴보자.
 
-```sh
+```javascript
 console.log(x);
 
 var x = 1000;
@@ -65,7 +65,7 @@ undefined
 이는 자바스크립트에서의 호이스팅이라는 개념으로 인해 변수의 선언부가 최상위로 끌어올려져서 나타나는 현상이다.
 즉, 자바스크립트에서는 위와 같은 코드를 다음과 같이 해석한다.
 
-```sh
+```javascript
 var x;
 
 console.log(x);
@@ -93,7 +93,7 @@ Java에서의 `/`가 몫을 반환했다면 자바스크립트에서는 실수�
 자바스크립트에서 문자열은 `''` 나 `""`로 표현한다.
 또한 자바스크립트에서의 문자열은 배열처럼 index로 접근가능하고 첫번째 글자부터 0번째 요소이다.
 하지만 문자열의 경우 한 번 할당된 이후에는 재할당이 불가능하다.
-```sh
+```javascript
 var str = 'Hello';
 console.log(str[0]); //H
 
@@ -115,7 +115,7 @@ undefined와 null 모두 **값이 없음**을 뜻하지만, `===`로 비교해�
 그 이유는, `==`연산자는 타입을 일치시킨 다음에 값을 비교하지만, `===`연산자는 타입 변환을 하지 않기 때문이다.
 `===`연산자의 경우, 비교하는 값의 타입과 값이 모두 같아야 true를 반환한다.
 
-```sh
+```javascript
 var a;
 var b = null;
 
@@ -132,7 +132,7 @@ console.log(a === b); //false
 자바스크립트 객체는 모두 **Object 객체를 상속**하고 있다.
 또한, **객체의 property는 동적으로 생성하고 삭제 및 수정이 가능**하다.
 
-```sh
+```javascript
 var obj = {
     stu1 : 'Jang'
     stu2 : 'Kim'
@@ -163,7 +163,7 @@ console.log(obj.stu2); //Kim
 * `in` 연산자 혹은 `hasOwnProperty`메서드를 통해서 특정 프로퍼티 이름이 객체에 존재하는지 알 수 있다.
 * `for in` 문을 통해 객체에 대해 loop를 돌릴 수 있다.
 
-```sh
+```javascript
 var obj2 = {
 	stu1 : 'Jang'
     stu2 : 'Kim'
@@ -192,7 +192,7 @@ for (prop in obj2) {
 기본 타입의 경우 값에 의한 호출 방식(Call By Value)으로 동작하고, 참조 타입의 경우 참조에 의한 호출 방식(Call By Reference)으로 동작한다.
 코드로 차이를 살펴보자.
 
-```sh
+```javascript
 var num = 100;
 var obj1 = { value : 100 };
 

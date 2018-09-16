@@ -4,7 +4,8 @@ title:  "[JavaScript] 3-1. 함수 정의"
 date:   2018-09-14
 excerpt: "함수 정의에 대해서"
 tag:
-[javascript]
+- javascript
+- function
 comments: true
 ---
 
@@ -23,7 +24,7 @@ comments: true
 * **함수 표현식 방식**
 * **Function() 생성자 함수**
 
-```sh
+```javascript
 //함수 선언문 방식
 function add(x, y) {
 	return x+y;
@@ -52,7 +53,7 @@ console.log(add(1,2)); //3
 
 2번에 해당하는 내용에 대해서 코드로 살펴보자.
 
-```sh
+```javascript
 var facTest = function factorial(x) {
 	if(x <= 1) {
     	return 1;
@@ -75,7 +76,7 @@ console.log(factorial(4)); Uncaught ReferenceError : factorial is not defined
 
 **함수 선언문 방식**과 **함수 표현식 방식**의 가장 큰 차이 중 하나는 **함수 호이스팅**이다.
 
-```sh
+```javascript
 console.log(plus(5,6)); //11
 console.log(minus(2,1)); // uncaught type error
 
