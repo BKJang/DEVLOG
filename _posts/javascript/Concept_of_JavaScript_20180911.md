@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post/javascript
 title:  "[JavaScript] 1. 자바스크립트의 컨셉"
 date:   2018-09-11
 excerpt: "자바스크립트의 컨셉에 대해서"
