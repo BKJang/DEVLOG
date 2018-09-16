@@ -4,8 +4,7 @@ title:  "[JavaScript] 3-1. 함수 정의"
 date:   2018-09-14
 excerpt: "함수 정의에 대해서"
 tag:
-- javascript
-- function
+[javascript]
 comments: true
 ---
 

@@ -4,7 +4,7 @@ title:  "[JavaScript] 2. 변수와 자료형"
 date:   2018-09-11
 excerpt: "변수와 자료형에 대해서"
 tag:
-- javascript
+[javascript]
 comments: true
 ---
 
