@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "자바스크립트 정리 1"
-date:   2018-09-11
-excerpt: "엔진 & 런타임 & 콜스텍에 대해서"
+title:  "[JavaScript] 1. 자바스크립트의 컨셉"
+date:   2018-01-02
+excerpt: "자바스크립트의 컨셉에 대해서"
 tag:
 - javascript
-- google-engine
-- callstack
 comments: true
 ---
 
