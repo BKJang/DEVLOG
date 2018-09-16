@@ -1,6 +1,6 @@
 # Site
-title:              Sseon Blog
-bio:                '신입 개발자가 되려고 하는 비전공자'
+title:              BKJang's Blog
+bio:                'Web Developer#'
 description:        "본격 스스로 공부, 프로젝트 블로그(aka 내 공부 블로그)"
 reading_time:       true
 words_per_minute:   200
@@ -8,7 +8,7 @@ logo:               'https://avatars2.githubusercontent.com/u/24274424?s=460&v=4
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             ko_kr
-url:                https://seonhyungjo.github.io
+url:                https://bkjang.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   sseonblog
+disqus_shortname:   bkjangblog
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -39,8 +39,8 @@ disqus_shortname:   sseonblog
 #bing-verify:
 email:
 #twitter:            username
-facebook:           profile.php?id=100015515351267
-github-url:         SeonHyungJo
+facebook:           bongki.jang.9
+github-url:         BKJang
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
@@ -53,7 +53,7 @@ github-url:         SeonHyungJo
 #steam:              username
 #dribbble:          username
 #youtube:           username
-youtube-channel:   UCCs6KHf_Zo_iI2jfg_eqeDg?view_as=subscriber
+#youtube-channel:   UCCs6KHf_Zo_iI2jfg_eqeDg?view_as=subscriber
 #soundcloud:        username
 #weibo:             username
 #flickr:            username
