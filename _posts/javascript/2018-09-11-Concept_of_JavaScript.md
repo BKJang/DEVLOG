@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "자바스크립트 정리 1"
-date:   2018-01-02
+date:   2018-09-11
 excerpt: "엔진 & 런타임 & 콜스텍에 대해서"
 tag:
 - javascript
