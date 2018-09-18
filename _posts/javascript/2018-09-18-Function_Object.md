@@ -15,10 +15,12 @@ comments: true
 
 ![JavaScript](/assets/img/es5.png)
 
+<br/>
+
 자바스크립트에서 함수에 대해 설명할 때, 가장 먼저 나오는 말이 있다.
 
-> **자바스크립트에서 함수 또한 객체다.**
-> **함수는 일급 객체다.**
+> - **자바스크립트에서 함수 또한 객체다.**
+> - **함수는 일급 객체다.**
 
 ## 자바스크립트에서 함수 또한 객체다.
 
@@ -105,15 +107,15 @@ console.dir(add);
 ```
 ![funcObject](/assets/img/function_object.png)
 
-#### `name`, `caller`, `arguments`
+### `name`, `caller`, `arguments`
 
 ---
 
-> **name : 함수의 이름을 나타낸다.**
-> **caller : 자신을 호출한 함수를 나타낸다. 위에선 add함수를 어디서도 호출하지 않았기 때문에 null을 반환했다.**
-> **arguments : 함수를 호출할 때 전달되는 인자 값을 나타낸다. 위에선 add함수가 호출된 상태가 아니기 때문에 null을 반환했다.**
+> - **name : 함수의 이름을 나타낸다.**
+> - **caller : 자신을 호출한 함수를 나타낸다. 위에선 add함수를 어디서도 호출하지 않았기 때문에 null을 반환했다.**
+> - **arguments : 함수를 호출할 때 전달되는 인자 값을 나타낸다. 위에선 add함수가 호출된 상태가 아니기 때문에 null을 반환했다.**
 
-#### `__proto__`
+### `__proto__`
 
 **모든 자바스크립트 객체는 자신의 프로토타입을 가리키는 [[prototype]] 내부프로퍼티를 가지고 있다.**
 이 내부 프로퍼티를 크롬 브라우저에서는 `__proto__`로 구현했다.
@@ -128,7 +130,7 @@ add함수 역시 부모 역할을 하는 ProtoType 객체를 가지고 있고 `_
 
 ---
 
-#### `length`, `prototype`
+### `length`, `prototype`
 
 ---
 
@@ -152,7 +154,7 @@ console.log(test.prototype.constructor); //f test() { return true; }
 test라는 함수 객체의 **prototype 프로퍼티는 constructor 프로퍼티를 참조**하고 있고,
 test의 프로토타입 객체는 **constructor라는 프로퍼티로 test함수를 참조**하고 있다.
 
-#### `__proto__`와 `prototype`의 차이
+### `__proto__`와 `prototype`의 차이
 
 ---
 
