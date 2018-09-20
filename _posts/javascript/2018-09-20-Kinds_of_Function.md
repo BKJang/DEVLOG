@@ -62,7 +62,6 @@ getData(
 
 ```javascript
 function outerFunc() {
-  
     var returnValue = 10;
 
     function innerFunc() {
@@ -88,8 +87,7 @@ console.log(innerFunc()); //innerFunc is not defined
 
 ```javascript
 function outerFunc() {
-
-	  var returnValue = 10;
+    var returnValue = 10;
 
     function innerFunc() {
     	return returnValue + 1;
@@ -134,7 +132,7 @@ var moduleFunction = (function () {
 })();
 
 function doSomething(x) {
-	console.log("moduleFunction - a :" , x);
+  console.log("moduleFunction - a :" , x);
 }
 
 moduleFunction.sayHello();
