@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Linux] 1. 리눅스는 무엇인가?"
-date:   2018-09-20
+date:   2018-09-21
 excerpt: "리눅스의 개념과 설치 환경에 대해서"
 tag:
 - linux
