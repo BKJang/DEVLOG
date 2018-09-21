@@ -11,6 +11,7 @@ comments: true
 
 ![Linux](/assets/img/Linux.jpg)
 
+<br/>
 
 ## 리눅스(Linux)란?
 
