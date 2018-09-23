@@ -21,7 +21,7 @@ Linux나 Windows나 **GUI(Graphic User Interface)** 가 있고 **CLI(Command Lin
 
 
 
-**■ pwd, cd**
+## pwd, cd
 
 * **pwd - 현재 나(관리자)가 작업중인 디렉토리의 절대경로를 보여준다.**
 
