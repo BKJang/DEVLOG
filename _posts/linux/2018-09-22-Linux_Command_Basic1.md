@@ -61,7 +61,7 @@ Linux나 Windows나 **GUI(Graphic User Interface)** 가 있고 **CLI(Command Lin
 
 ![Linux](/assets/img/linux_ls.png)
 
-<br/>
+<br/> 
 
 현재 home이라는 디렉토리 안에 a라는 디렉토리가 생성되어있는 상태이고,
 
