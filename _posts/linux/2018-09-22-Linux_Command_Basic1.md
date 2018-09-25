@@ -27,10 +27,11 @@ Linux나 Windows나 **GUI(Graphic User Interface)** 가 있고 **CLI(Command Lin
 
 * **cd - 이동하고자하는 디렉토리로 이동한다.**
 
+<br/>
 
 ![Linux](/assets/img/linux_pwd.png)
 
-
+<br/>
 
 위의 그림을 보면** pwd라는 명령어를 입력하니 /root라는 디렉토리에서 현재 작업하고 있다고 표시를 해준다.** 그리고나서 /home이라는 디렉토리로 이동을 하고 싶어 **cd라는 명령어를 입력하여 이동한 것**을 볼 수 있다.
 
@@ -56,6 +57,7 @@ Linux나 Windows나 **GUI(Graphic User Interface)** 가 있고 **CLI(Command Lin
 
 **6. -R :** 하위 경로와 그 안에 있는 모든 파일들도 같이 나열해준다.
 
+<br/>
 
 ![Linux](/assets/img/linux_ls.png)
 
@@ -85,6 +87,8 @@ a라는 디렉토리 안에 b라는 디렉토리와 developer, poketmongo, test�
 1. /home/a/디렉토리 안의 poketmongo라는 파일을 /home/a/b/디렉토리로 복사한다.
 
 2. /home/a/디렉토리 안의 test라는 파일을 /home/a/b/디렉토리로 이동한다.
+
+<br/>
 
 ![Linux](/assets/img/linux_cpmv.png)
 
@@ -120,8 +124,9 @@ a라는 디렉토리 안에 b라는 디렉토리와 developer, poketmongo, test�
 
 4\. 삭제 후, /ittest/a/b/의 상위 디렉토리까지 모두 삭제한다.
 
-![Linux](/assets/img/linux_mkdir.png)
+<br/>
 
+![Linux](/assets/img/linux_mkdir.png)
 
 <br/>
 
@@ -131,7 +136,7 @@ mkdir 명령어에서 옵션 없이 /ittest/a/b/c/를 만들려다보니 에러�
 
 ## rm
 
-* **rm - 파일 및 디렉토리를 삭제한다.**_=
+* **rm - 파일 및 디렉토리를 삭제한다.**
 
 ### rm의 옵션
 
@@ -141,6 +146,8 @@ mkdir 명령어에서 옵션 없이 /ittest/a/b/c/를 만들려다보니 에러�
 
 
 - /home/a/b/c/에서 /home/을 제외한 모든 디렉토리를 삭제하고 파일이 있다면 그 파일까지 모두 삭제한다. (단, 삭제할건지 물어보는 확인작업을 거치지 않는다.)
+
+<br/>
 
 ![Linux](/assets/img/linux_rm.png)
 
