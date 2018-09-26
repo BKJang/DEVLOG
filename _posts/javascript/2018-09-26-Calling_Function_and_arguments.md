@@ -17,7 +17,7 @@ comments: true
 
 Java에서 함수를 호출할 때 보다 JavaScript에서의 함수 호출은 자유롭다.
 
-```Java
+```javascript 
 //Java
 class TestMain {
 
