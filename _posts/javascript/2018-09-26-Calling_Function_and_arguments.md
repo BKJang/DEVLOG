@@ -11,6 +11,8 @@ comments: true
 
 ![JavaScript](/assets/img/es5.png)
 
+<br/>
+
 ## JavaScript에서의 함수 호출
 
 모든 언어에서 함수의 기본적인 작동 원리는 **호출에 의한 동작**이다.
