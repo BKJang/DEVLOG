@@ -24,13 +24,14 @@ Java에서 함수를 호출할 때 보다 JavaScript에서의 함수 호출은 �
 class TestMain {
 
    public static void main(String[] args) {
-		System.out.println(add(2, 3)); //5
+		
+        System.out.println(add(2, 3)); //5
         System.out.println(add()); //Error
 		System.out.println(add(2, 3, 4)); //Error
    }
 
    public add(x, y) {
-		return x + y;
+       return x + y;
    }
 }
 
@@ -39,7 +40,7 @@ class TestMain {
 ```javascript
 //JavaScript
 function add(x, y) {
-	return x + y;
+    return x + y;
 };
 
 console.log(add(2,3)); //5
@@ -60,10 +61,10 @@ Java에서는 정의된 함수의 인자 개수만큼 함수를 호출 할 때 �
 
 ```javascript
 function add() {
-	var result = 0;
+    var result = 0;
 
     for(var i=0; i<arguments.length; i++) {
-	    result += arguments[i];
+        result += arguments[i];
     }
 
     return result;
@@ -73,6 +74,7 @@ console.log(add(2,3)); //5
 console.log(add(2,3,4)); //9
 console.log(add()); //0
 ```
+
 > arguments 객체는 함수가 호출되면, **JavaScript가 자동으로 생성하고 매개변수와 함께 함수 내부로 전달**된다.
 > arguments 객체는 **유사배열객체**다.(유사배열객체이기 때문에 위의 코드 처럼 배열 형태로 접근할 수 있다.)
 > arguments 객체를 이용해서 **매개변수의 갯수에 따라 다른 처리를 해야하는 함수를 구현**할 수 있다.
