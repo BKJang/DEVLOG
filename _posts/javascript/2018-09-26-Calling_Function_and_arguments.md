@@ -24,10 +24,9 @@ Java에서 함수를 호출할 때 보다 JavaScript에서의 함수 호출은 �
 class TestMain {
 
    public static void main(String[] args) {
-		
         System.out.println(add(2, 3)); //5
         System.out.println(add()); //Error
-		System.out.println(add(2, 3, 4)); //Error
+        System.out.println(add(2, 3, 4)); //Error
    }
 
    public add(x, y) {
