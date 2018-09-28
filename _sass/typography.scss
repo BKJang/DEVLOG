@@ -68,7 +68,6 @@ h3.title a {
 
 // quotes
 blockquote {
-	font-family:$alt-font;
 	font-style:italic;
 	border-left:8px solid $color_tundora;
 	padding-left:20px;
@@ -76,7 +75,6 @@ blockquote {
 }
 @media only screen and (min-width: 48em) {
 	blockquote {
-		margin-left:-28px
 	}
 }
 
