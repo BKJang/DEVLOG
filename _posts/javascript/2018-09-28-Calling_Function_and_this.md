@@ -19,10 +19,10 @@ JavaScript에서는 함수를 호출할 때, arguments객체와 함께 this 인�
 
 문제는 this인자가 함수가 호출되는 방식(패턴)에 따라 다른 객체를 참조하기 때문에 이를 이해하기 어려울 수 있다.
 
-> 객체의 메서드 호출할 때 
-> 함수를 호출할 때(내부 함수의 this 바인딩)
-> 생성자 함수를 호출할 때
-> call과 apply메서드의 사용을 통한 this 바인딩
+> * 객체의 메서드 호출할 때 
+> * 함수를 호출할 때(내부 함수의 this 바인딩)
+> * 생성자 함수를 호출할 때
+> * call과 apply메서드의 사용을 통한 this 바인딩
 
 <br/>
 
@@ -178,7 +178,7 @@ console.log(window.sex); //male
 
 ```javascript
 function Developer(name, age, sex) {
-    if(!(this instanceof arguments.callee)) //this가 Developer의 인스턴스 인지 확인
+    if(!(this instanceof arguments.callee)) //this가 Developer의 인스턴스인지 확인
         return new Developer(name, age, sex); //인스턴스가 아니라면 생성
 
     this.name = name ? name : '';
@@ -194,6 +194,9 @@ console.log(b); //Developer {name: "BKJang2", age: "26", sex: "female"}
 console.log(window.age); //undefined
 ```
 위의 코드를 보면 **this가 해당 생성자 함수의 인스턴스인지 확인하고 아니라면 new로 Developer를 호출하여 반환하도록 했다.**
+
+`callee`는 현재 실행되고 있는 함수 객체를 뜻한다. 즉, **함수 객체 자신을 가리키는 수단**이다.
+(위의 코드에서 `arguments.callee`는 `Developer`로 바꿔도 무방하다.)
 
 위의 패턴으로 코드를 짜면 `var b = Developer('BKJang2', '26', 'female');`라고 호출해도 window객체에 바인딩 되지 않고 해당 생성자 함수의 인스턴스에 바인딩되는 것을 볼 수 있다.
 
