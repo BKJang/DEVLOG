@@ -5,7 +5,7 @@ date:   2018-09-29
 excerpt: "프로토타입에 대하여"
 tag:
 - javascript
-- function
+- prototype
 comments: true
 ---
 
