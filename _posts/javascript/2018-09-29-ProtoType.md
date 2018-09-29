@@ -116,12 +116,14 @@ console.log(Developer.__proto__ === Function.prototype); //true (함수 객체�
 > * **함수 객체만 가지고 있는** 프로퍼티이다.
 > * 함수 객체(Developer)를 통해 생성될 **객체(web)의 부모 역할을 하는 객체(프로토타입 객체)를 가리킨다.**
 
+<br/>
+
 ### [[Prototype]] 링크
 
 ---
 
 > * 함수를 포함한 **모든 객체가 가지고 있는 프로퍼티**이다.
-> * 객체의 입장에서 부모인 프로토타입 객체를 가리키며 **함수 객체의 경우 Function.prototype을 가리킨다.**(다음 포스팅에서 이어질 프로토타입 체이닝에서 설명할 예정이다.)
+> * 객체의 입장에서 부모인 프로토타입 객체를 가리키며, **함수 객체의 경우 Function.prototype을 가리킨다.** (다음 포스팅에서 이어질 프로토타입 체이닝에서 설명할 예정이다.)
 
 <br/>
 
@@ -147,6 +149,8 @@ console.log(web.constructor === Developer); //true
 /* Developer를 생성한 객체는 Function 함수 객체 */
 console.log(Developer.constructor === Function); //true
 ```
+
+<br/>
 
 ---
 
