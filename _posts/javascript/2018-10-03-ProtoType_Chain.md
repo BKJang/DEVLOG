@@ -29,7 +29,9 @@ console.log(developer.__proto__ === Object.prototype); //true
 console.log(Object.prototype.hasOwnProperty('hasOwnProperty')); //true
 ```
 
-`developer`객체에는 `hasOwnProperty()`메서드가 존재하지 않지만 에러가 나지 않는다. 이는 `developer` 객체의 **부모 객체인 `Object.prototype` 해당 메서드를 검색하기 때문**이다. 
+`developer`객체에는 `hasOwnProperty()`메서드가 존재하지 않지만 에러가 나지 않는다. 
+이는 `developer` 객체의 **부모 객체인 `Object.prototype` 해당 메서드를 검색하기 때문**이다.
+
 위를 보면 `console.log(Object.prototype.hasOwnProperty('hasOwnProperty'));`의 결과 값은 true를 반환하는 것을 볼 수 있다.
 
 <br/>
@@ -216,11 +218,11 @@ console.log(android.constructor); //Object()
 
 **프로토타입 객체를 변경하기 전,** web객체의 constructor는 프로토타입 체이닝에 따라 **`Developer()`생성자 함수**를 가리킨다.
 
-**프로토타입 객체를 변경한 후,** android객체의 constructor는 &**`Object()` 함수**를 가리킨다.
+**프로토타입 객체를 변경한 후,** android객체의 constructor는 **`Object()` 함수**를 가리킨다.
 
 프로토타입 객체가 변경되면서 **Developer.prototype 객체의 constructor 프로퍼티와 Developer() 생성자 함수의 연결이 깨진다.**
 
-이에 따라 **프로토타입 체이닝으로** android 객체의 constructor는 `Object.prototype` 객체의 constructor 프로퍼티가 가리키는 **`Object()` 함수**가 되는 것이다.
+이에 따라 **프로토타입 체인이 동작하고** android 객체의 constructor는 `Object.prototype` 객체의 constructor 프로퍼티가 가리키는 **`Object()` 함수**가 되는 것이다.
 
 <br/>
 
@@ -258,7 +260,7 @@ console.log(android.sex); //3.female
 
 <br/>
 
-> 1. `web` 객체에는 age와 sex 프로퍼티가 없기 때문에 **프로토타입 체인이 동작하여 `Developer.prototype` 객체의 `ag`e와 `sex` 프로퍼티에 접근**하고 있다.
+> 1. `web` 객체에는 age와 sex 프로퍼티가 없기 때문에 **프로토타입 체인이 동작하여 `Developer.prototype` 객체의 `age`와 `sex` 프로퍼티에 접근**하고 있다.
 > 2. `android` 객체에는 age 프로퍼티는 없지만 sex 프로퍼티는 있기 때문에 **`sex` 프로퍼티의 경우엔 프로토타입 체인이 동작하지 않고 android 객체의 `sex` 프로퍼티 값을 반환**하고 있다.
 
 <br/>
