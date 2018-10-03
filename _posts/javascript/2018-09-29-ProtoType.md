@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[JavaScript] 4-1. 프로토타입(ProtoType)"
+title:  "[JavaScript] 4-1. 프로토타입(Prototype)"
 date:   2018-09-29
 excerpt: "프로토타입에 대하여"
 tag:
