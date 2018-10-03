@@ -32,8 +32,6 @@ console.log(Object.prototype.hasOwnProperty('hasOwnProperty')); //true
 `developer`객체에는 `hasOwnProperty()`메서드가 존재하지 않지만 에러가 나지 않는다. 
 이는 `developer` 객체의 **부모 객체인 `Object.prototype` 해당 메서드를 검색하기 때문**이다.
 
-위를 보면 `console.log(Object.prototype.hasOwnProperty('hasOwnProperty'));`의 결과 값은 true를 반환하는 것을 볼 수 있다.
-
 <br/>
 
 ## 객체 리터럴 방식으로 생성했을 때 프로토타입 체인
