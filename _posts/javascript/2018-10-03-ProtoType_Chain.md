@@ -88,7 +88,7 @@ console.log(Function.prototype.__proto__ === Object.prototype); //5.true
 
 ---
 
-> 객체 리터럴 방식으로 객체를 생성하든 생성자 함수를 이용해 객체를 생성하든지 **결국 모든 객체의 부모 객체(프로토타입 객체)는 `Object.prototype` 객체**다. 이 때 `Object.prototype` 객체를 **프로토타입 체인의 종점**이라 한다.
+> 객체 리터럴 방식으로 객체를 생성하든 생성자 함수를 이용해 객체를 생성하든 **결국 모든 객체의 부모 객체(프로토타입 객체)는 `Object.prototype` 객체**다. 이 때 `Object.prototype` 객체를 **프로토타입 체인의 종점**이라 한다.
 
 <br/>
 
@@ -134,7 +134,7 @@ web 객체의 프로토타입 객체(부모 객체)인 `Developer.prototype` 객
 
 ## 기본 데이터 타입의 확장
 
-자바스크립트에서 숫자, **문자열과 같은 기본 데이터 타입에서 사용되는 표준 메서드의 경우 `Number.prototype`과 `String.prototype` 객체에 정의**되어 있다.
+자바스크립트에서 **숫자, 문자열과 같은 기본 데이터 타입에서 사용되는 표준 메서드의 경우 `Number.prototype`과 `String.prototype` 객체에 정의**되어 있다.
 
 ```javascript
 var str = 'hello world';
@@ -258,7 +258,7 @@ console.log(android.sex); //3.female
 
 <br/>
 
-> 1. `web` 객체에는 age와 sex 프로퍼티가 없기 때문에 **프로토타입 체인이 동작하여 `Developer.prototype` 객체의 `age`와 `sex` 프로퍼티에 접근**하고 있다.
+> 1. `web` 객체에는 age와 sex 프로퍼티가 없기 때문에 **프로토타입 체인에 따라 `Developer.prototype` 객체의 `age`와 `sex` 프로퍼티에 접근**하고 있다.
 > 2. `android` 객체에는 age 프로퍼티는 없지만 sex 프로퍼티는 있기 때문에 **`sex` 프로퍼티의 경우엔 프로토타입 체인이 동작하지 않고 android 객체의 `sex` 프로퍼티 값을 반환**하고 있다.
 
 <br/>
