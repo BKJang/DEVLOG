@@ -49,7 +49,7 @@ feature: '/assets/img/Linux.jpg'
 
 ### 옵션
 
-**1. -name : find [경로] -name [파일명] :** 파일명에 해당하는 파일을 찾아준다.
+**1. -name :** 파일명에 해당하는 파일을 찾아준다. (`find [경로] -name [파일명]`)
 
 <br/>
 
@@ -57,7 +57,7 @@ feature: '/assets/img/Linux.jpg'
 
 <br/>
 
-**2. -type d || f :find [경로] d || f :** -d를 입력하면 디렉토리를, f를 입력하면 파일을 출력해준다.
+**2. -type d/f :** -d를 입력하면 디렉토리를, f를 입력하면 파일을 출력해준다. (`find [경로] d || f`) 
 
 <br/>
 
@@ -65,7 +65,7 @@ feature: '/assets/img/Linux.jpg'
 
 <br/>
 
-**3. -newer : find [경로] -newer [파일명] :** 당 파일을 이후에 작성된 파일을 찾아준다.
+**3. -newer :** 당 파일을 이후에 작성된 파일을 찾아준다. (`find [경로] -newer [파일명]`)
 
 <br/>
 
@@ -73,7 +73,7 @@ feature: '/assets/img/Linux.jpg'
 
 <br/>
 
-**4. -exec : find -name [파일명] -exec [실행 명령] :** 실행명령에 따라서 찾은 파일을 처리한다.
+**4. -exec :** 실행명령에 따라서 찾은 파일을 처리한다. (`find -name [파일명] -exec [실행 명령]`)
 
 <br/>
 
