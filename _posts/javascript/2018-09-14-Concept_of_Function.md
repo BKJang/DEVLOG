@@ -7,14 +7,8 @@ tag:
 - javascript
 - function
 comments: true
+feature: '/assets/img/javascript.jpg'
 ---
-
-
-
-
-
-![JavaScript](/assets/img/es5.png)
-
 
 ## 함수 정의 방법
 

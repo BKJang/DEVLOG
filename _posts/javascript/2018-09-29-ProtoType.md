@@ -7,11 +7,8 @@ tag:
 - javascript
 - prototype
 comments: true
+feature: '/assets/img/javascript.jpg'
 ---
-
-![JavaScript](/assets/img/es5.png)
-
-<br/>
 
 ## 프로토타입 객체
 

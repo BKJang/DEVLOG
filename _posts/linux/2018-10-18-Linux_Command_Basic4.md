@@ -9,10 +9,6 @@ comments: true
 feature: '/assets/img/Linux.jpg'
 ---
 
-![Linux](/assets/img/Linux.jpg)
-
-<br/>
-
 ## cal
 
 * **cal- 달력을 출력해준다.**

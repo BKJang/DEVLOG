@@ -6,11 +6,8 @@ excerpt: "alias, cat, touch에 대해서"
 tag:
 - linux
 comments: true
+feature: '/assets/img/Linux.jpg'
 ---
-
-![Linux](/assets/img/Linux.jpg)
-
-<br/>
 
 ## alias
 

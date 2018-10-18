@@ -7,15 +7,8 @@ tag:
 - javascript
 - function
 comments: true
+feature: '/assets/img/javascript.jpg'
 ---
-
-
-
-
-
-![JavaScript](/assets/img/es5.png)
-
-<br/>
 
 자바스크립트에서 함수에 대해 설명할 때, 가장 먼저 나오는 말이 있다.
 

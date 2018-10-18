@@ -7,15 +7,8 @@ tag:
 - javascript
 - function
 comments: true
+feature: '/assets/img/javascript.jpg'
 ---
-
-
-
-
-
-![JavaScript](/assets/img/es5.png)
-
-<br/>
 
 자바스크립트에서 함수는 여러 가지 형태를 가진다.
 

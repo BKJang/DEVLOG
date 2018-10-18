@@ -6,11 +6,8 @@ excerpt: "pwd, cd, ls, cp, mv, mkdir, rmdir, rm에 대해서"
 tag:
 - linux
 comments: true
+feature: '/assets/img/Linux.jpg'
 ---
-
-![Linux](/assets/img/Linux.jpg)
-
-<br/>
 
 Linux나 Windows나 **GUI(Graphic User Interface)** 가 있고 **CLI(Command Line Interface)**가 있다. 일반적으로 여러분들이 가장 많이 접하는 것이 GUI 즉, 그래픽 환경이고 관리자가 접하게 되며, Linux를 공부하며 접하게 될 것이 CLI 즉, **명령어 기반의 환경**이다. 이번 포스팅에서 소개할 기본명령어들은 기본적으로 CLI 사용되는 명령어들이다.
 

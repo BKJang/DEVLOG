@@ -6,14 +6,8 @@ excerpt: "자바스크립트의 컨셉에 대해서"
 tag:
 - javascript
 comments: true
+feature: '/assets/img/javascript.jpg'
 ---
-
-
-
-
-
-![JavaScript](/assets/img/es5.png)
-
 
 ## 객체지향 프로그래밍
 

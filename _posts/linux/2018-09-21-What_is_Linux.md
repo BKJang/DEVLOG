@@ -6,11 +6,8 @@ excerpt: "리눅스의 개념과 설치 환경에 대해서"
 tag:
 - linux
 comments: true
+feature: '/assets/img/Linux.jpg'
 ---
-
-
-![Linux](/assets/img/Linux.jpg)
-
 
 ## 리눅스(Linux)란?
 

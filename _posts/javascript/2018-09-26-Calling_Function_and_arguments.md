@@ -7,11 +7,8 @@ tag:
 - javascript
 - function
 comments: true
+feature: '/assets/img/javascript.jpg'
 ---
-
-![JavaScript](/assets/img/es5.png)
-
-<br/>
 
 ## JavaScript에서의 함수 호출
 

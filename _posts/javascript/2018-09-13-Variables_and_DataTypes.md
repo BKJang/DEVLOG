@@ -6,11 +6,8 @@ excerpt: "변수와 자료형에 대해서"
 tag:
 - javascript
 comments: true
+feature: '/assets/img/javascript.jpg'
 ---
-
-
-![JavaScript](/assets/img/es5.png)
-
 
 ## 변수 선언(var)
 

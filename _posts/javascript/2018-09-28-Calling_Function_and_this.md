@@ -7,11 +7,8 @@ tag:
 - javascript
 - function
 comments: true
+feature: '/assets/img/javascript.jpg'
 ---
-
-![JavaScript](/assets/img/es5.png)
-
-<br/>
 
 ## 함수 호출 패턴과 this 바인딩
 
