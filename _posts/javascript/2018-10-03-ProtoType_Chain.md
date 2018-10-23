@@ -53,7 +53,7 @@ console.log(Function.prototype.__proto__ === Object.prototype); //4.true
 
 `developer` 객체와 `Function.prototype` 객체의 **프로토타입 객체는 `Object.prototype` 객체**다.
 
-> 객체리터럴 방식으로 객체를 생성하면, 해당 객체의 프로토타입 객체는 `Object.protype` 객체다.
+> 객체리터럴 방식으로 객체를 생성하면, 해당 객체의 프로토타입 객체는 `Object.prototype` 객체다.
 
 <br/>
 
