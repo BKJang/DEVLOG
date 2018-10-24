@@ -5,7 +5,7 @@ date:   2018-10-22
 excerpt: "실행 컨텍스트에 대하여"
 tag:
 - javascript
-- scope
+- execution context
 comments: true
 feature: '/assets/img/javascript.jpg'
 ---
