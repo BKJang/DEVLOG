@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Linux] 3. 리눅스의 특수 권한"
+title:  "[Linux] 4. 리눅스의 특수 권한"
 date:   2018-10-30
 excerpt: "SetUID, SetGid, Sticky bit에 대해서"
 tag:
@@ -10,6 +10,8 @@ feature: '/assets/img/Linux.jpg'
 ---
 
 ## SetUID, SetGID
+
+---
 
 SetUID의 경우 사용자가 사용을 할 때만, **소유자의 권한**으로 파일을 실행시키고 SetGID의 경우 사용자가 사용을 할 때만, **그룹의 권한**으로 파일을 실행한다.
 
@@ -53,9 +55,9 @@ SetUID 권한은 쉽게 말해, **사용자에게 관리자의 권한을 파일�
 
 여기선 find 명령어를 사용하면 된다.
 
-![perm](/assets/img/linux_perm.png)
-
 <br/>
+
+![perm](/assets/img/linux_perm.png)
 
 이렇게 `-perm`옵션(permission)을 사용하여 허가권이 **4000이상**인 모든 파일을 찾아주는 것이다.
 
@@ -80,6 +82,8 @@ SetUID 권한은 쉽게 말해, **사용자에게 관리자의 권한을 파일�
 
 ## Sticky bit
 
+---
+
 Sticky bit가 설정된 디렉토리에는 누구든 접근가능하고, 파일을 생성해낼 수 있다.<br/> 하지만 생성된 파일을 **삭제시에는 소유자(파일 생성자)와 관리자만 지울 수 있게 된다.**<br/>
 다른 사용자는 **자신의 소유가 아닌 파일을 삭제할 수 없다.**
 
@@ -89,29 +93,21 @@ root가 교수님이고 a, b(a, b는 사용자 계정)가 학생이라고 가정
 
 1. **교수님이 `/professor/test/`에 testing이라는 숙제파일을 올리라고 지시를 했다.**
 
-<br/>
-
 ![perm](/assets/img/linux_Stickybit1.png)
 
 <br/>
 
 2. **a는 성실한 학생이라 올렸는데 b는 a가 숙제를 올리면 그 숙제를 삭제해버린다.**
 
-<br/>
-
 ![perm](/assets/img/linux_Stickybit2.png)
 
 ![perm](/assets/img/linux_Stickybit3.png)
-
-<br/>
 
 위의 예제를 보면, a가 만든 testing이라는 파일을 b의 계정으로 로그인을 해서 삭제가 된다. 사실상 말이 안되는 경우이다.
 
 <br/>
 
 3. **그래서 a는 교수님에게 말하고 교수님은 권한을 재설정한다.(Sticky bit)**
-
-<br/>
 
 ![perm](/assets/img/linux_Stickybit4.png)
 
@@ -122,8 +118,6 @@ a의 말을 듣고 교수님은 관리자(root) 계정으로 `/professor/test/` 
 <br/>
 
 4. **a는 다시 숙제를 서버에 올리고, b는 다시 삭제하려하지만 실패한다.**
-
-<br/>
 
 ![perm](/assets/img/linux_Stickybit5.png)
 
