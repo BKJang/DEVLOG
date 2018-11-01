@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[JavaScript] 8-1. 객체지향 프로그래밍 첫 번째"
-date:   2018-11-02
+date:   2018-11-01
 excerpt: "프로토타입 기반의 OOP에 대하여"
 tag:
 - javascript
