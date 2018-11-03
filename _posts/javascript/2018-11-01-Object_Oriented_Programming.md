@@ -13,6 +13,8 @@ feature: '/assets/img/javascript.jpg'
 
 ## 객제지향 프로그래밍
 
+---
+
 객체지향 프로그래밍은 **현실에 존재하는 객체를 소프트웨어에 표현하기 위해 상태와 행위를 추상화(abstraction)하여 모델링하는 프로그래밍 패러다임**을 말한다. 
 
 다시 말해, 우리가 주변의 사물과 우리의 행위를 프로그래밍에 접목하려는 것을 말한다.
@@ -20,6 +22,8 @@ feature: '/assets/img/javascript.jpg'
 <br/>
 
 ## 클래스 기반
+
+---
 
 Java나 C++ 같은 클래스 기반의 언어에서는 `class`를 이용하여 **속성(attribute)과 행위(method)를 정의**한다.
 
@@ -53,6 +57,8 @@ class Person {
 <br/>
 
 ## 프로토타입 기반
+
+---
 
 자바스크립트는 클래스라는 개념이 없다.(ES6에서 class가 생기긴 했지만 **이는 사실 함수이며 프로토타입 기반의 syntatic sugar**다.)
 
@@ -90,6 +96,8 @@ var obj = new Person('BKJang', 'Developer');
 <br/>
 
 ## 생성자 함수를 이용한 객체 생성
+
+---
 
 자바스크립트는 생성자 함수를 이용해 객체를 생성할 수 있다.
 
@@ -134,6 +142,8 @@ console.log(backEnd); //{lang: "Node.js", setLang: ƒ, getLang: ƒ}
 <br/>
 
 ## 프로토타입 체인을 이용한 참조
+
+---
 
 자바스크립트에서 모든 객체는 **프로토타입이라는 내부 링크**를 갖고 있고 프로토타입을 통해 객체를 연결한다. 이를 **[프로토타입 체인](https://bkjang.github.io/ProtoType_Chain/)**이라고 한다.
 

@@ -12,6 +12,8 @@ feature: '/assets/img/javascript.jpg'
 
 ## 프로토타입 체인
 
+---
+
 특정 객체의 메서드나 프로퍼티에 접근하고자할 때, **해당 객체에 접근하려고 하는 프로퍼티나 객체가 없다면** 프로토타입 링크([[Prototype]] 프로퍼티)를 따라 **자신의 부모 역할을 하는 프로토타입 객체를 차례로 검색**한다. 이를 프로토타입 체인이라 한다.
 
 ```javascript
@@ -32,6 +34,8 @@ console.log(Object.prototype.hasOwnProperty('hasOwnProperty')); //true
 <br/>
 
 ## 객체 리터럴 방식으로 생성했을 때 프로토타입 체인
+
+---
 
 ```javascript
 var developer = {
@@ -59,6 +63,8 @@ console.log(Function.prototype.__proto__ === Object.prototype); //4.true
 
 ## 생성자 함수를 생성했을 때 프로토타입 체인
 
+---
+
 ```javascript
 function Developer(name) {
     this.name = name;
@@ -83,13 +89,13 @@ console.log(Function.prototype.__proto__ === Object.prototype); //5.true
 
 ### 프로토타입 체인의 종점(End of prototype chain)
 
----
-
 > 객체 리터럴 방식으로 객체를 생성하든 생성자 함수를 이용해 객체를 생성하든 **결국 모든 객체의 부모 객체(프로토타입 객체)는 `Object.prototype` 객체**다. 이 때 `Object.prototype` 객체를 **프로토타입 체인의 종점**이라 한다.
 
 <br/>
 
 ## 프로토타입 객체의 확장
+
+---
 
 프로토타입 객체 역시 객체다. 따라서, 객체의 **프로퍼티를 동적으로 추가하거나 삭제할 수 있다.**
 
@@ -130,6 +136,8 @@ web 객체의 프로토타입 객체(부모 객체)인 `Developer.prototype` 객
 <br/>
 
 ## 기본 데이터 타입의 확장
+
+---
 
 자바스크립트에서 **숫자, 문자열과 같은 기본 데이터 타입에서 사용되는 표준 메서드의 경우 `Number.prototype`과 `String.prototype` 객체에 정의**되어 있다.
 
@@ -182,6 +190,8 @@ console.log(Function.prototype.__proto__ === Object.prototype); //5.true
 
 ## 프로토타입 객체의 변경
 
+---
+
 자바스크립트에서 특정 객체는 **부모 객체인 프로토타입 객체를 임의로 변경할 수 있다.**
 
 ```javascript
@@ -227,6 +237,8 @@ console.log(android.constructor); //Object()
 <br/>
 
 ## 프로토타입 체인의 동작 조건
+
+---
 
 > 프로토타입 체인은 객체의 특정 프로퍼티에 접근할 때, 그 프로퍼티가 해당 객체에 없는 경우 동작한다.
 

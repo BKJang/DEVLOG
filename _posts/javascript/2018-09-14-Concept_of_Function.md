@@ -12,6 +12,8 @@ feature: '/assets/img/javascript.jpg'
 
 ## 함수 정의 방법
 
+---
+
 자바스크립트에서 함수를 정의하는 방법은 3가지가 있다.
 
 * **함수 선언문 방식**
@@ -67,6 +69,8 @@ console.log(factorial(4)); Uncaught ReferenceError : factorial is not defined
 <br/>
 
 ## 함수 호이스팅
+
+---
 
 **함수 선언문 방식**과 **함수 표현식 방식**의 가장 큰 차이 중 하나는 **함수 호이스팅**이다.
 

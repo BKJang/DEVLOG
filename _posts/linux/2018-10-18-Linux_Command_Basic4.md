@@ -11,6 +11,8 @@ feature: '/assets/img/Linux.jpg'
 
 ## cal
 
+---
+
 * **cal- 달력을 출력해준다.**
 
 <br/>
@@ -21,6 +23,8 @@ feature: '/assets/img/Linux.jpg'
 
 ## date, rdate
 
+---
+
 * **date- 현재의 시간과 날짜를 확인할 수 있다.**
 * **tail - 타임서버에서 시간 정보를 얻고, 그 정보를 가지고 시간정보를 변경한다.**
 
@@ -29,7 +33,6 @@ feature: '/assets/img/Linux.jpg'
 **1. -p :** 타임서버의 현재시간을 확인한다.
 
 **2. -s :** HOST 시간 타임서버와 동기화한다.
-
 
 <br/>
 
@@ -44,6 +47,8 @@ feature: '/assets/img/Linux.jpg'
 <br/>
 
 ## find
+
+---
 
 * **find- 파일 및 디렉토리를 검색한다. (Windows에서 ctrl+f키를 누르면 뜨는 찾아보기의 기능과 같다.)**
 
@@ -82,6 +87,8 @@ feature: '/assets/img/Linux.jpg'
 <br/>
 
 ## shutdown
+
+---
 
 * **shutdown - 옵션에 따라 종료 및 재부팅을 명령할 수 있다.**
 

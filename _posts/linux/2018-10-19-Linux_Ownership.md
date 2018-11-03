@@ -11,6 +11,8 @@ feature: '/assets/img/Linux.jpg'
 
 ## 허가권(Permission)
 
+---
+
 `ls` 명령어를 실행해서 파일과 디렉토리의 목록을 보면 앞에 다음과 같이 나타나는 부분이 있을 것이다. 이것을 리눅스에서는 **허가권(Permission)이라고 부른다.**
 
 <br/>
@@ -23,8 +25,6 @@ feature: '/assets/img/Linux.jpg'
 * `drwxr-xr-x` : 디렉토리(**앞이 d라면 디렉토리**)
 
 ### rwx란?
-
----
 
 ![cal](/assets/img/linux_rwx.png)
 
@@ -61,11 +61,11 @@ feature: '/assets/img/Linux.jpg'
 
 ## chmod
 
+---
+
 * **chmod - 허가권 설정(사용자 권한 : w / 그룹의 권한 : r / 그외 사용자 : o)**
 
 ### 1. numeric method
-
----
 
 `> chmod 461 file/directory`<br/> 
 (4 : r / 6 : r+w / 1 : x)
@@ -82,8 +82,6 @@ ex) test파일에 관하여 사용자, 그룹, 그 외 사용자 모두에게 �
 
 ### 2. symbolic method
 
----
-
 `> chmod g+r file/directory`<br/>
 (g : group / r : read)
 
@@ -98,8 +96,6 @@ ex) 그룹에 읽기 권한과 쓰기 권한을 부여하겠다.
 <br/>
 
 ### numeric method와 symbolic method 문제
-
----
 
 1. `/a/`라는 디렉토리를 생성한다.
 2. `/a/testing`이라는 파일을 생성한다.
@@ -122,6 +118,8 @@ ex) 그룹에 읽기 권한과 쓰기 권한을 부여하겠다.
 
 ## 소유권(Ownership)
 
+---
+
 `ls` 명령어를 실행했을 때 표시된 이 부분을 보고 리눅스에서는 소유권(Permission)이라고 부른다.
 
 <br/>
@@ -135,6 +133,8 @@ ex) 그룹에 읽기 권한과 쓰기 권한을 부여하겠다.
 <br/>
 
 ## chown
+
+---
 
 * **chown - 소유자 및 소유그룹 설정**
 

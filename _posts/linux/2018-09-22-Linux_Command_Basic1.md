@@ -13,12 +13,16 @@ Linux나 Windows나 **GUI(Graphic User Interface)** 가 있고 **CLI(Command Lin
 
 ## 리눅스에서 명령어란?
 
+---
+
 리눅스를 공부하면서 접하게 될 명령어라는 것은 **Prompt상**에서 사용되는 것들이다. 
 영화에서 많이 보던 검은 화면에 초록글씨가 적혀지는 것들을 본 것이 있을 것이다. 그것이 Prompt상에서 명령어들을 입력함으로써 나오는 화면들이다.
 
-
+<br/>
 
 ## pwd, cd
+
+---
 
 * **pwd - 현재 나(관리자)가 작업중인 디렉토리의 절대경로를 보여준다.**
 
@@ -36,7 +40,11 @@ Linux나 Windows나 **GUI(Graphic User Interface)** 가 있고 **CLI(Command Lin
 
 귀찮을 수 있지만 이 습관을 잘 들여놔야 나중가서도 더 빠르게 작업을 진행할 수 있다.
 
+<br/>
+
 ## ls
+
+---
 
 * **ls - 디렉토리의 목록을 볼 수 있다.**
 
@@ -70,7 +78,11 @@ a라는 디렉토리 안에 b라는 디렉토리와 developer, poketmongo, test�
 
 현재 b디렉토리 안에는 아무것도 없기 때문에 출력이 되지 않은 것이다.
 
+<br/>
+
 ## cp, mv
+
+---
 
 * **cp - 파일과 디렉토리를 복사한다.(copy)**
 
@@ -93,9 +105,11 @@ a라는 디렉토리 안에 b라는 디렉토리와 developer, poketmongo, test�
 
 두개의 명령어를 실행했고 그 결과 poketmongo라는 파일이 복사가 되고, /home/a/에 있던 test라는 파일이 /home/a/b/디렉토리로 이동된 것을 볼 수 있다.
 
-
+<br/>
 
 ## mkdir, rmdir
+
+---
 
 * **mkdir - 디렉토리를 생성한다.(make directory)**
 
@@ -129,9 +143,11 @@ a라는 디렉토리 안에 b라는 디렉토리와 developer, poketmongo, test�
 
 mkdir 명령어에서 옵션 없이 /ittest/a/b/c/를 만들려다보니 에러가 뜨는 것을 볼 수 있다.
 
-
+<br/>
 
 ## rm
+
+---
 
 * **rm - 파일 및 디렉토리를 삭제한다.**
 

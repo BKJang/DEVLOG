@@ -19,6 +19,8 @@ feature: '/assets/img/javascript.jpg'
 
 ## 자바스크립트에서 함수 또한 객체다.
 
+---
+
 함수는 기본적으로 코드를 실행하는 역할을 한다. 이에 더해서 자바스크립트에서는 함수 또한 일반 객체처럼 자기 자신의 프로퍼티를 가질 수 있다.
 
 ```javascript
@@ -38,6 +40,8 @@ console.log(add.hello); //Hello World
 <br/>
 
 ## 함수는 일급 객체다.
+
+---
 
 자바스크립트에서 함수는 다음과 같은 특성들을 가진다.
 
@@ -96,6 +100,8 @@ returnFunc(); //return value is 100
 
 ## 함수 객체의 표준 프로퍼티(Property)
 
+---
+
 ```javascript
 var add = function(x, y) {
  	return x + y;
@@ -108,8 +114,6 @@ console.dir(add);
 <br/>
 
 ### `name`, `caller`, `arguments`
-
----
 
 > - **name : 함수의 이름을 나타낸다.**
 > - **caller : 자신을 호출한 함수를 나타낸다. 위에선 add함수를 어디서도 호출하지 않았기 때문에 null을 반환했다.**
@@ -130,13 +134,9 @@ add함수 역시 부모 역할을 하는 ProtoType 객체를 가지고 있고 `_
 
 크롬 브라우저에서는 이 객체를 Empty()함수로 정의하고 있고, 이 역시 함수 객체이므로, `name`, `caller`, `arguments` 등과 같은 프로퍼티를 가진다.
 
----
-
 <br/>
 
 ### `length`, `prototype`
-
----
 
 모든 함수는 `length`와 `prototype` 프로퍼티를 가져야 한다.
 
@@ -161,8 +161,6 @@ test의 프로토타입 객체는 **constructor라는 프로퍼티로 test함수
 <br/>
 
 ### `__proto__`와 `prototype`의 차이
-
----
 
 >두 프로퍼티는 모두 프로토타입 객체를 가리키는 공통점을 가지고 있으나 차이점은 있고 구분해야 한다는 점이다.
 >

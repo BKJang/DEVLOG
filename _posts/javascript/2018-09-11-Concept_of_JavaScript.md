@@ -11,7 +11,7 @@ feature: '/assets/img/javascript.jpg'
 
 ## 객체지향 프로그래밍
 
-
+---
 
 자바스크립트는 클래스를 지원하지는 않지만, 객체지향 프로그래밍이 가능하다.(사실, 하다보면 느끼겠지만 지원하지 않는다기보단 클래스를 만들어 사용할 수는 있다. 또한, ES6부터는 클래스를 지원하고 이는 기존 ES5의 **Syntatic Sugar**이다.)
 
@@ -27,7 +27,7 @@ feature: '/assets/img/javascript.jpg'
 
 ## 함수형 프로그래밍
 
-
+---
 
 자바스크립트는 함수형 프로그래밍 또한 가능하도록 설계되어있다.
 
@@ -48,7 +48,7 @@ feature: '/assets/img/javascript.jpg'
 
 ## JavaScript의 핵심 개념
 
-
+---
 
 1. **객체** : JavaScript는 기본적으로 기본 데이터 타입(`boolean`, `number`, `string`)과 `null`, `undefined`를 제외하고는 모두 객체라고 봐도 무방하다. 물론, 이 데이터 타입들도 객체로 구현하고 다룰 수 있다.
 

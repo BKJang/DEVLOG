@@ -11,7 +11,7 @@ feature: '/assets/img/javascript.jpg'
 
 ## 변수 선언(var)
 
-
+---
 
 자바스크립트는 `var`**를 사용해 변수를 선언**한다.
 
@@ -77,9 +77,9 @@ console.log(x);
 
 ## 자바스크립트의 자료형
 
-#### 기본자료형
+---
 
-- - -
+### 기본자료형
 
 ##### 숫자
 Java에는 `int`,`long`,`float`,`double` 과 같이 여러 개의 숫자 타입이 존재한다. 이와 달리 자바스크립트는 하나의 숫자형만 존재한다.
@@ -121,9 +121,7 @@ console.log(a === b); //false
 ```
 <br/>
 
-#### 참조 자료형(Object)
-
-- - -
+### 참조 자료형(Object)
 
 자바스크립트의 객체는 `key : value` 형태의 property를 저장하는 컨테이너이다.
 자바스크립트 객체는 모두 **Object 객체를 상속**하고 있다.
@@ -184,6 +182,8 @@ for (prop in obj2) {
 <br/>
 
 ## Call By Reference
+
+---
 
 기본 타입과 참조 타입의 경우 함수 호출 방식에 차이가 있다.
 기본 타입의 경우 값에 의한 호출 방식(Call By Value)으로 동작하고, 참조 타입의 경우 참조에 의한 호출 방식(Call By Reference)으로 동작한다.

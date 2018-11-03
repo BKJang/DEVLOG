@@ -12,6 +12,8 @@ feature: '/assets/img/javascript.jpg'
 
 ## JavaScript에서의 함수 호출
 
+---
+
 모든 언어에서 함수의 기본적인 작동 원리는 **호출에 의한 동작**이다.
 
 Java에서 함수를 호출할 때 보다 JavaScript에서의 함수 호출은 자유롭다.
@@ -54,6 +56,8 @@ Java에서는 정의된 함수의 인자 개수만큼 함수를 호출 할 때 �
 <br/>
 
 ## arguments 객체
+
+---
 
 ```javascript
 function add() {

@@ -12,6 +12,8 @@ feature: '/assets/img/javascript.jpg'
 
 ## 함수 호출 패턴과 this 바인딩
 
+---
+
 JavaScript에서는 함수를 호출할 때, arguments객체와 함께 this 인자가 함수 내부로 전달된다.
 
 문제는 this인자가 함수가 호출되는 방식(패턴)에 따라 다른 객체를 참조하기 때문에 이를 이해하기 어려울 수 있다.
@@ -24,6 +26,8 @@ JavaScript에서는 함수를 호출할 때, arguments객체와 함께 this 인�
 <br/>
 
 ## 객체의 메서드 호출할 때 this 바인딩
+
+---
 
 객체의 메서드를 호출할 때 this는 해당 메서드를 호출한 객체에 바인딩 된다.
 
@@ -44,6 +48,8 @@ obj.returnLang(); //Korean
 
 ## 함수를 호출할 때 this 바인딩
 
+---
+
 JavaScript에서 함수를 호출할 때, 함수 내부에서 사용된 **this는 전역객체(window 객체)에 바인딩** 된다.
 
 ```javascript
@@ -59,8 +65,6 @@ returnLang(); //Korean
 ```
 
 ### 내부함수에서의 this 바인딩
-
----
 
 ```javascript
 var lang = 'Korean';
@@ -139,6 +143,8 @@ innerFunc2 : Engilsh
 
 ## 생성자 함수를 호출할 때 this 바인딩
 
+---
+
 생성자 함수를 호출할 때 this는 일반 함수를 호출할 때와 다르게 **새로 생성되는 빈 객체에 바인딩이 된다.**
 
 ```javascript
@@ -200,6 +206,8 @@ console.log(window.age); //undefined
 <br/>
 
 ## call과 apply메서드의 사용을 통한 this 바인딩
+
+---
 
 이전에 봤던 경우들과 다르게 JavaScript 내부적으로 바인딩하는 방식도 있지만, 명시적으로 특정 객체에 바인딩할 수도 있다.
 

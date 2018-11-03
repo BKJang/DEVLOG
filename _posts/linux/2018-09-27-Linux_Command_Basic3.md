@@ -11,6 +11,8 @@ feature: '/assets/img/Linux.jpg'
 
 ## head
 
+---
+
 * **head - 파일의 내용을 위에서부터 10줄을 출력해낸다(기본 값이 10줄)**
 
 <br/>
@@ -28,6 +30,8 @@ feature: '/assets/img/Linux.jpg'
 <br/>
 
 ## tail
+
+---
 
 * **tail - 파일의 내용을 아래에서부터 10줄을 출력해낸다(기본 값이 10줄)**
 
@@ -49,6 +53,8 @@ feature: '/assets/img/Linux.jpg'
 
 ## more
 
+---
+
 * **more - 내용이 많은 파일을 화면단위로 끊어 보여준다.**
 
 <br/>
@@ -64,6 +70,8 @@ feature: '/assets/img/Linux.jpg'
 <br/>
 
 ## nl
+
+---
 
 * **nl - 파일의 내용을 출력했을 때 몇번 째 줄인지 각각의 줄마다 표시를 해준다.(number line)**
 

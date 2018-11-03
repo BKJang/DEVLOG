@@ -12,6 +12,8 @@ feature: '/assets/img/javascript.jpg'
 
 ## 프로토타입 객체
 
+---
+
 기본적으로 자바스크립트는 객체지향 프로그래밍을 지원한다. 단, Java와 다르게 **프로토타입 기반의 객체지향 언어**이다.
 
 자바스크립트는 **클래스가 없다.**(사실, 하다보면 느끼겠지만 지원하지 않는다기보단 클래스를 만들어 사용할 수는 있다. 또한, ES6부터는 클래스를 지원하고 이는 기존 ES5의 **Syntatic Sugar**이다.)
@@ -66,6 +68,8 @@ console.log(obj.__proto__ === Object.prototype); //true
 
 ## [[Prototype]] 프로퍼티([[Prototpye]] 링크)와 prototype 프로퍼티
 
+---
+
 여기서부터 [[Prototype]] 프로퍼티를 **[[Prototpye]]링크**라고 하겠다.
 
 ```javascript
@@ -108,8 +112,6 @@ console.log(Developer.__proto__ === Function.prototype); //true (함수 객체�
 
 ### prototype 프로퍼티
 
----
-
 > * **함수 객체만 가지고 있는** 프로퍼티이다.
 > * 함수 객체(Developer)를 통해 생성될 **객체(web)의 부모 역할을 하는 객체(프로토타입 객체)를 가리킨다.**
 
@@ -117,14 +119,14 @@ console.log(Developer.__proto__ === Function.prototype); //true (함수 객체�
 
 ### [[Prototype]] 링크
 
----
-
 > * 함수를 포함한 **모든 객체가 가지고 있는 프로퍼티**이다.
 > * 객체의 입장에서 부모인 프로토타입 객체를 가리키며, **함수 객체의 경우 Function.prototype을 가리킨다.** (다음 포스팅에서 이어질 프로토타입 체이닝에서 설명할 예정이다.)
 
 <br/>
 
 ## constructor 프로퍼티
+
+---
 
 **프로토타입 객체(Prototype Object)는 constructor 프로퍼티를 가진다.**
 
@@ -148,8 +150,6 @@ console.log(Developer.constructor === Function); //true
 ```
 
 <br/>
-
----
 
 > * 프로토타입 객체(Prototype Object) : 생성한 객체의 **부모 역할을 하는 객체**
 > * 프로토타입 링크([[Prototype]] 링크) : 크롬 브라우저에서는 `__proto__`로 표현하고 있으며, **부모 역할을 하는 프로토타입 객체를 가리킨다.**

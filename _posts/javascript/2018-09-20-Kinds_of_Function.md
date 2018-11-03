@@ -14,6 +14,8 @@ feature: '/assets/img/javascript.jpg'
 
 ## 익명함수
 
+---
+
 ```javascript
 var add = function(x, y) {
 	return x + y;
@@ -26,6 +28,8 @@ var add = function(x, y) {
 <br/>
 
 ## 콜백함수
+
+---
 
 위의 익명함수의 대표적인 용도 중 하나가 콜백함수의 생성이다.
 콜백함수가 많이 쓰이는 비동기 통신을 예로 들어보자.
@@ -54,6 +58,8 @@ getData(
 
 ## 내장함수(Inner Function)
 
+---
+
 내장함수를 사용하면 **전역 스코프의 있는 함수의 범위를 줄일 수 있고**, 내장함수를 통해 객체지향의 **캡슐화, 정보은닉**의 개념을 구현할 수 있다.
 
 ```javascript
@@ -77,8 +83,6 @@ console.log(innerFunc()); //innerFunc is not defined
 
 ### 내장함수를 함수 스코프 외부에서 호출
 
----
-
 위에서 일반적으로 **일반적으로 특정 함수의 외부에서는 그 안에 구현된 내장 함수에 접근할 수 없다.** 라고 했는데, 외부에서 내장 함수를 호출하기 위해선 다음과 같이 구현할 수 있다.
 
 ```javascript
@@ -100,6 +104,8 @@ inner(); //11
 <br/>
 
 ## 즉시실행함수(Immediate Function)
+
+---
 
 함수를 정의함과 동시에 실행하는 함수를 **즉시실행함수**라고 한다.
 
