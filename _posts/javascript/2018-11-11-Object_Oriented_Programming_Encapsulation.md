@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[JavaScript] 8-2. 객체지향 프로그래밍(캡슐화)"
+title:  "[JavaScript] 8-3. 객체지향 프로그래밍(캡슐화)"
 date:   2018-11-11
 excerpt: "캡슐화와 모듈 패턴에 대하여"
 tag:
@@ -139,22 +139,3 @@ console.log(Developer.prototype === bkJang.__proto__); //true
 
 - 인사이드 자바스크립트 (송형주, 고형준)
 - [자바스크립트 객체지향 프로그래밍](https://poiemaweb.com/js-object-oriented-programming)
-```js
-var Developer = function (obj) {
-  var developerInfo;
-
-  function Developer(obj) {
-	  developerInfo = obj ? obj : '';
-  }
-
-  
-  Developer.prototype.getDeveloperInfo = function() {
-    return developerInfo;
-  }
-  
-	return Developer;
-};
-
-var developer = new Developer({ name: 'BKJang', lang: 'javascript' });
-
-console.log(developer);
