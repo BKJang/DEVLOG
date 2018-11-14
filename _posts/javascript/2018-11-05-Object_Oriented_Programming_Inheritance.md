@@ -65,7 +65,7 @@ console.log(jsDeveloper.constructor); //Person(job)
 
 위의 코드를 보면 자식 생성자 함수인 `Developer()`함수의 프로토타입 객체를 Person 생성자 함수의 인스턴스로 교체하고 있다.
 
-그리고 **자식 생성자 함수(`Developer()`)의 `[[Prototype]] `프로퍼티는 부모 생성자 함수(`Persion()`)의 프로토타입 객체를 가리키고 있다.**
+그리고 **자식 생성자 함수(`Developer()`)의 `[[Prototype]]`프로퍼티는 부모 생성자 함수(`Person()`)의 프로토타입 객체를 가리키고 있다.**
 
 <br/>
 
