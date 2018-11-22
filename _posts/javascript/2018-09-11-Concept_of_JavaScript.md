@@ -52,7 +52,6 @@ feature: '/assets/img/javascript.jpg'
 4. **실행컨텍스트와 Closure** : 여기서 알아야할 가장 중요한 것은 **Scope**다. 자바스크립트는 자신만의 방법으로 실행 컨텍스트를 만들고 이 실행 컨텍스트는 자신만의 Scope를 갖는데 이 과정에서 Closure를 구현할 수 있다. 이또한 JavaScript에서 굉장히 중요한 부분이기 때문에 차후 집중적으로 다룰 것이다.
 
 
-
 * * *
 
 <br/>
