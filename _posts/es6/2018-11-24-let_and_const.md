@@ -23,6 +23,8 @@ feature: '/assets/img/es6.jpg'
 
 그렇다면 변수가 선언됐을 때 자바스크립트에서 어떤 과정이 일어나는지 살펴보자.
 
+<br/>
+
 ### 선언
 
 값을 할당하지 않고 **선언만 하는 과정**을 거친다.
@@ -55,7 +57,7 @@ feature: '/assets/img/es6.jpg'
 
 위에서 말한 **확보** 즉, 자바스크립트 파일의 메모리를 할당하는 과정이 필요하기 때문에 호이스팅이 발생한다.
 
-`let`으로 선언만 되고 할당되지 않은 변수를 사용하려고 하면 `var`와 달리 `Reference Error`가 발생한다.
+**`let`으로 선언만 되고 할당되지 않은 변수를 사용하려고 하면 `var`와 달리 `Reference Error`가 발생**한다.
 
 이는 `let`으로 선언된 변수는 할당 되기 전에 **TDZ(Temporal Dead Zone), 일시적 사각 지대**에 빠지게 되기 때문이다. <br/>이 때문에 `Reference Error`가 발생하는 것이다.
 
@@ -87,6 +89,8 @@ console.log(b);
 
 하지만, 호이스팅이 일어나 메모리 공간을 확보한 뒤, **일시적 사각지대(TDZ)** 에 빠져있는 상태이기 때문에 `Reference Error`가 발생하는 것이다.
 
+<br/>
+
 ### 블록레벨 스코프
 
 `var`는 **함수레벨 스코프**라면 `let`은 **블록레벨 스코프**를 지원한다.
@@ -115,6 +119,8 @@ console.log(result); //ReferenceError: result is not defined
 
 `if`문 내에서 `let`으로 선언한 변수는 `var`와 다르게 **블록 내의 지역 변수**로 할당 되기 때문에 블록 외부에서는 이를 호출하면 `Reference Error`가 발생하게 된다.
 
+<br/>
+
 ### 변수 중복 선언 불가
 
 `let`으로 선언한 변수는 중복 선언이 불가하다.
@@ -136,6 +142,8 @@ let result = 'world';
 
 //Uncaught SyntaxError: Identifier 'result' has already been declared
 ```
+
+<br/>
 
 ### 클로저(Closure)
 
@@ -210,6 +218,8 @@ count(4);
 
 따라서 위와 같이 간단하게 원하는 결과를 출력할 수 있다.
 
+<br/>
+
 ## const
 
 ---
@@ -229,9 +239,13 @@ FOO = 234;
 
 위 처럼 `const`로 선언된 변수에 다른 값을 재할당하려하면 에러가 발생한다.
 
+<br/>
+
 ### 블록레벨 스코프
 
 `const`로 선언된 변수 또한 `let`으로 선언된 변수처럼 블록 레벨 스코프를 가진다.
+
+<br/>
 
 ### 객체의 할당
 
@@ -261,6 +275,7 @@ Developer = {
 <br/>
 
 #### Reference
+
 - [let & const](https://jaeyeophan.github.io/2017/04/18/let-const/)
 - [ES6 let,const 알아보기](http://takeuu.tistory.com/86)
 - [let, const와 블록 레벨 스코프](https://poiemaweb.com/es6-block-scope)
