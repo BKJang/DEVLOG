@@ -66,6 +66,5 @@ console.log(`1 더하기 2 는 ${1 + 2} 입니다.`);
 
 #### Reference
 
-- [let & const](https://jaeyeophan.github.io/2017/04/18/let-const/)
-- [ES6 let,const 알아보기](http://takeuu.tistory.com/86)
-- [let, const와 블록 레벨 스코프](https://poiemaweb.com/es6-block-scope)
+- [템플릿 리터럴](https://poiemaweb.com/es6-template-literals)
+- [Template literals](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals)
