@@ -179,7 +179,7 @@ const lang = 'Korean';
 
 const obj = {
     lang : 'English',
-    foo : = () => { 
+    foo : () => { 
         console.log('outerFunc : ', this.lang);
     }
 }
