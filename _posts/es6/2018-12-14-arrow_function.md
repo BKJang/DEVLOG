@@ -175,7 +175,7 @@ btn.addEventListener('click', () => {
 객체의 메서드를 선언할 때, **화살표 함수를 쓰면 그 객체에 this가 바인딩되지 않고 전역(window)에 바인딩**된다.
 
 ```js
-const lang = 'Korean';
+var lang = 'Korean';
 
 const obj = {
     lang : 'English',
@@ -191,7 +191,7 @@ obj.foo(); //outerFunc : Korean
 
 따라서 원하는 결과가 English라면 축약 메서드 표현법으로 정의하는 것이 맞다.
 ```js
-const lang = 'Korean';
+var lang = 'Korean';
 
 const obj = {
     lang : 'English',
