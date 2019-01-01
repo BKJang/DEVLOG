@@ -26,11 +26,14 @@ layout: compress
                     {% endif %}
                     {% if page.project %}
                     <a class="btn zoombtn" href="{{site.url}}/projects/">
-                    {% else if page.Articles %}
+                    {% endif %}
+                    {% if page.Articles %}
                     <a class="btn zoombtn" href="{{site.url}}/Articles/">
-                    {% else if page.TIL %}
+                    {% endif %}
+                    {% if page.TIL %}
                     <a class="btn zoombtn" href="{{site.url}}/TIL/">
-                    {% else %}
+                    {% endif %}
+                    {% if page.TIL == false || page.project == false || page.TIL == false %}
                     <a class="btn zoombtn" href="{{site.url}}/posts/">
                     {% endif %}
                         <i class="fa fa-chevron-left"></i>
