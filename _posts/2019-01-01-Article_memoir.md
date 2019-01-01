@@ -109,7 +109,7 @@ React로 진행된 프로젝트였고, 개인적으로 관심만 가지고 있�
 
 <br/>
 
- ### Big Data Visualization - Heatmap
+### Big Data Visualization - Heatmap
 
 구글 Map을 이용해 Big Data의 시각화를 구현하는 프로젝트였다. 프론트의 HeatMap을 구현하는 것은 전적으로 나에게 맡겨졌고 **무거운 책임감을 갖고 진행했던 프로젝트**였다.
 
