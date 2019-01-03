@@ -40,12 +40,12 @@
       text-decoration: underline;
     }
     & .gatsby-highlight {
-      max-width: $layout-post-single-width;
+      max-width: 100%;
     
       @include margin-bottom(1);
     }
     & :not(div) {
-      max-width: $layout-post-single-width;
+      max-width: 100%;
       margin-left: auto;
       margin-right: auto;
     }

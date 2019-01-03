@@ -69,7 +69,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: slategray;
+    color: gray;
 }
 
 .token.punctuation {
@@ -145,7 +145,7 @@ pre[class*="language-"] {
     color: rgb(166, 226, 46);
 }
 :not(pre)>code[class*=language-] {
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.8571;
     background-color: rgb(232, 232, 232);
     border-width: 1px;
@@ -155,6 +155,7 @@ pre[class*="language-"] {
     border-radius: 4px;
     margin: 0px 2px;
     padding: 0px 5px;
+    color: #383838;
 }
 .token.boolean {
     color: #ff5874;
