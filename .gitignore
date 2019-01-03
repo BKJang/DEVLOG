@@ -1,3 +1,10 @@
-_site/
-.sass-cache/
-.jekyll-metadata
+node_modules/
+.cache/
+public/static
+public/index.html
+public/render-page.js.map
+npm-debug.log
+.eslintcache
+.gatsby-context.js
+.idea
+gatsby-starter-lumen.iml

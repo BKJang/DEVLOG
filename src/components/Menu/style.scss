@@ -1,0 +1,58 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.menu {
+    @include margin-bottom(1);
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &-item {
+            padding: 0;
+            margin: 10px 0;
+            &-link {
+                font-size: $typographic-base-font-size;
+                color: $typographic-base-font-color;
+                font-weight: 400;
+                border: 0;
+                &:hover,
+                &:focus {
+                    color: $color-primary;
+                    border-bottom: 1px solid $color-primary;
+                }
+                &--active {
+                    color: $color-primary;
+                    border-bottom: 1px solid $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.sub_menu {
+    @include margin-bottom(1);
+    &__list {
+        list-style: none;
+        padding-left: 1rem;
+        margin: 0;
+        &-item {
+            padding: 0;
+            margin: 10px 0;
+            &-link {
+                font-size: 0.9rem;
+                color: $typographic-base-font-color;
+                font-weight: 400;
+                border: 0;
+                &:hover,
+                &:focus {
+                    color: #f7a046;
+                    border-bottom: 1px solid #f7a046;
+                }
+                &--active {
+                    color: #f7a046;
+                    border-bottom: 1px solid #f7a046;
+                }
+            }
+        }
+    }
+}
