@@ -5,8 +5,9 @@ class TagTemplateDetails extends React.Component {
   render() {
     const items = []
     const tagTitle = this.props.pageContext.tag
-    const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
+    console.log(this.props.data.allMarkdownRemark)
+    const posts = this.props.data.allMarkdownRemark ? this.props.data.allMarkdownRemark.edges : null
+    posts && posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
 
