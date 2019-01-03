@@ -1,7 +1,6 @@
 node_modules/
 .cache/
 public/static
-public/index.html
 public/render-page.js.map
 npm-debug.log
 .eslintcache
