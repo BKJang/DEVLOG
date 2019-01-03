@@ -3,11 +3,11 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
+    url: 'https://bkdevlog.netlify.com',
     title: 'BKJang\'s Blog',
     subtitle: 'BKJang\'s Devlog',
     copyright: '© All rights reserved.',
-    disqusShortname: 'bkjang-github-io',
+    disqusShortname: 'devlog-9',
     menu: [
       {
         label: 'All Posts',
