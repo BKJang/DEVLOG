@@ -145,11 +145,16 @@ pre[class*="language-"] {
     color: rgb(166, 226, 46);
 }
 :not(pre)>code[class*=language-] {
-    border-radius: .3em;
-    background: rgba(255,229,100,.2);
-    color: #1a1a1a;
-    padding: .15em .2em .05em;
-    white-space: normal;
+    font-size: 0.875rem;
+    line-height: 1.8571;
+    background-color: rgb(232, 232, 232);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(208, 209, 213);
+    border-image: initial;
+    border-radius: 4px;
+    margin: 0px 2px;
+    padding: 0px 5px;
 }
 .token.boolean {
     color: #ff5874;
