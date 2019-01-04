@@ -38,11 +38,15 @@ path: "/about"
 
 **description** <br/>사용자에게 무료 Wifi를 제공하는 대신, 광고를 제공하고 고객 개인정보와 위치 정보를 수집해 분석하고 이를 마케팅 정보로 활용하기 위한 서비스입니다.
 
+<br/>
+
 #### KnockCoin (https://knockcoin.io/excenter/exchange)
 
 - React, JavaScript, Redux
 
 **description**<br/> 비트코인, 이더리움과 같은 암호 화폐를 거래하고 입, 출금 서비스를 제공하는 암호화폐 거래소입니다.
+
+<br/>
 
 #### ETMS(Enterprise Management System)
 
@@ -58,6 +62,8 @@ path: "/about"
 
 기존 사내 Solution으로 보유하고 있던 시스템으로서, 기업의 IT자산을 직관적으로 파악하고, IT 자산 관리에 이용되는 비용을 정산하고 그에 따른 통계를 제공해주는 시스템입니다.
 
+---
+
 ### Side Project
 
 #### jobQ (https://github.com/BKJang/jobQ)
@@ -65,6 +71,8 @@ path: "/about"
 - JavaScript, jQuery, Bootstrap3, Spring Framework, Oracle, SVN
 
 구직자와 구인자를 이어주는 플랫폼입니다. <br/>알바몬과 잡코리아와 같은 구인 구직 플랫폼으로 구직자는 본인의 이력서를 작성하고 각각의 공고에 지원할 수 있으며 구인자는 공고를 작성해 올릴 수 있습니다.
+
+<br/>
 
 #### ImHome (https://github.com/BKJang/YourHome)
 
