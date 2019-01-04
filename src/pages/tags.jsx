@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import kebabCase from 'lodash/kebabCase'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
+import favicon from './favicon.ico'
 
 class TagsRoute extends React.Component {
   render() {
@@ -13,7 +14,9 @@ class TagsRoute extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`All Tags - ${title}`} />
+          <Helmet title={`All Tags - ${title}`} >
+            <link rel="shortcut icon" href={favicon} />
+          </Helmet>
           <Sidebar {...this.props} />
           <div className="content">
             <div className="content__inner">
@@ -53,6 +56,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        searchConsole
         menu {
           label
           path

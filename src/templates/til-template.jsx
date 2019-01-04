@@ -3,10 +3,11 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import TilTemplateDetails from '../components/TilTemplateDetails'
+import favicon from '../pages/favicon.ico'
 
 class TilTemplate extends React.Component {
   render() {
-    const { title, subtitle } = this.props.data.site.siteMetadata
+    const { title, subtitle, searchConsole } = this.props.data.site.siteMetadata
     const post = this.props.data.markdownRemark
     const { title: postTitle, description: postDescription } = post.frontmatter
     const description = postDescription !== null ? postDescription : subtitle
@@ -17,6 +18,8 @@ class TilTemplate extends React.Component {
           <Helmet>
             <title>{`${postTitle} - ${title}`}</title>
             <meta name="description" content={description} />
+            <meta name="google-site-verification" content={searchConsole} />
+            <link rel="shortcut icon" href={favicon} />
           </Helmet>
           <TilTemplateDetails {...this.props} />
         </div>
@@ -34,6 +37,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        searchConsole
         author {
           name
           facebook

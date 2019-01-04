@@ -8,6 +8,7 @@ module.exports = {
     subtitle: 'BKJang\'s Devlog',
     copyright: '© All rights reserved.',
     disqusShortname: 'devlog-9',
+    searchConsole: 'jWwq-hWS1SVMfrNlhWDF9mMTWwabHJNzxNHXOySacaA',
     menu: [
       {
         label: 'All Posts',

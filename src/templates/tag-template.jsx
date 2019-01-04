@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
 import TagTemplateDetails from '../components/TagTemplateDetails'
+import favicon from '../pages/favicon.ico'
 
 class TagTemplate extends React.Component {
   render() {
@@ -13,7 +14,9 @@ class TagTemplate extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`All Posts tagged as "${tag}" - ${title}`} />
+          <Helmet title={`All Posts tagged as "${tag}" - ${title}`} >
+            <link rel="shortcut icon" href={favicon} />
+          </Helmet>
           <Sidebar {...this.props} />
           <TagTemplateDetails {...this.props} />
         </div>
@@ -31,6 +34,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        searchConsole
         menu {
           label
           path

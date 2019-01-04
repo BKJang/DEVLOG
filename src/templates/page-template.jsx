@@ -3,10 +3,11 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PageTemplateDetails from '../components/PageTemplateDetails'
+import favicon from '../pages/favicon.ico'
 
 class PageTemplate extends React.Component {
   render() {
-    const { title, subtitle } = this.props.data.site.siteMetadata
+    const { title, subtitle, searchConsole } = this.props.data.site.siteMetadata
     const page = this.props.data.markdownRemark
     const { title: pageTitle, description: pageDescription } = page.frontmatter
     const description = pageDescription !== null ? pageDescription : subtitle
@@ -17,6 +18,8 @@ class PageTemplate extends React.Component {
           <Helmet>
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
+            <meta name="google-site-verification" content={searchConsole} />
+            <link rel="shortcut icon" href={favicon} />
           </Helmet>
           <PageTemplateDetails {...this.props} />
         </div>
@@ -34,6 +37,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        searchConsole
         menu {
           label
           path
