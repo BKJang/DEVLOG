@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
 import CategoryTemplateDetails from '../components/CategoryTemplateDetails'
+import favicon from '../pages/favicon.ico'
 
 class CategoryTemplate extends React.Component {
   render() {
@@ -13,7 +14,9 @@ class CategoryTemplate extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`${category} - ${title}`} />
+          <Helmet title={`${category} - ${title}`} >
+            <link rel="shortcut icon" href={favicon} />
+          </Helmet>
           <Sidebar {...this.props} />
           <CategoryTemplateDetails {...this.props} />
         </div>
@@ -31,6 +34,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        searchConsole
         menu {
           label
           path

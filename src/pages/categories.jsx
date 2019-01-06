@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
+import favicon from './favicon.ico'
 
 class CategoriesRoute extends React.Component {
   render() {
@@ -13,7 +14,9 @@ class CategoriesRoute extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`All Categories - ${title}`} />
+          <Helmet title={`All Categories - ${title}`} >
+            <link rel="shortcut icon" href={favicon} />
+          </Helmet>
           <Sidebar {...this.props} />
           <div className="content">
             <div className="content__inner">
@@ -58,6 +61,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        searchConsole
         menu {
           label
           path

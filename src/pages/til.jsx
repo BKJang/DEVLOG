@@ -4,11 +4,12 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
+import favicon from './favicon.ico'
 
 class TilRoute extends React.Component {
   render() {
     const items = []
-    const { title, subtitle } = this.props.data.site.siteMetadata
+    const { title, subtitle, searchConsole } = this.props.data.site.siteMetadata
     const posts = this.props.data.allMarkdownRemark.edges
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
@@ -20,6 +21,8 @@ class TilRoute extends React.Component {
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
+            <meta name="google-site-verification" content={searchConsole} />
+            <link rel="shortcut icon" href={favicon} />
           </Helmet>
           <Sidebar {...this.props} />
           <div className="content">
@@ -40,6 +43,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        searchConsole
         menu {
           label
           path
