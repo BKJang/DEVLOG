@@ -127,17 +127,17 @@ console.log(a === b); //false
 
 ```javascript
 var obj = {
-    stu1 : 'Jang'
-    stu2 : 'Kim'
+    stu1 : 'Jang',
+    stu2 : 'Kim',
     stu3 : 'Kang'
 };
 
 //객체의 property 동적 생성
-obj.stu4 : 'Cho';
+obj.stu4 = 'Cho';
 console.log(obj.stu4); //Cho
 
 //객체의 property 수정
-obj.stu1 : 'Park';
+obj.stu1 = 'Park';
 console.log(obj.stu1) //Park
 
 //객체의 property 삭제
@@ -158,13 +158,13 @@ console.log(obj.stu2); //Kim
 
 ```javascript
 var obj2 = {
-	stu1 : 'Jang'
-    stu2 : 'Kim'
+	stu1 : 'Jang',
+    stu2 : 'Kim',
     stu3 : 'Kang'
 }
 
 console.log('stu1' in obj2); //true
-console.log(hasOwnProperty('stu1')); //true
+console.log(obj2.hasOwnProperty('stu1')); //true
 
 var prop;
 for (prop in obj2) {
@@ -213,7 +213,7 @@ console.log(obj1);
 ```
 코드를 보면 callFunc 함수를 호출한 이후, 기본 타입인 num변수는 값이 변하지 않지만, 참조 타입인 obj1객체의 value 프로퍼티의 경우에는 값이 변하는 것을 볼 수 있다.
 
-그 이유는 객체의 경우, callFunc 함수의 파라미터로 obj1이 전달될 때 obj1이 참조하는 객체의 위치 값이 그대로 전달되기 때문이다.
+그 이유는 객체의 경우, callFunc 함수의 파라미터로 obj1이 전달될 때 obj1이 참조하는 객체의 위치 값(주소 값)이 그대로 전달되기 때문이다.
 
 <br/>
 
