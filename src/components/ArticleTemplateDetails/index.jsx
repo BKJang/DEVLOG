@@ -64,13 +64,6 @@ class ArticleTemplateDetails extends React.Component {
             <hr />
             <p className="post-single__footer-text">
               {subtitle}
-              <a
-                href={`https://github.com/${author.github}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <br /> <strong>{author.name}</strong> on GitHub
-              </a>
             </p>
             {commentsBlock}
           </div>

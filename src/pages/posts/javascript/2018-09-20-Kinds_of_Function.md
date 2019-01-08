@@ -23,7 +23,7 @@ var add = function(x, y) {
 }
 ```
 * **익명함수는 이름이 없다.**
-* **주로 변수에 할당되거나 함수의 인자값(parameter) 또는 반환값으로 사용된다.**
+* **주로 변수에 할당(함수표현식)되거나 함수의 인자값(parameter) 또는 반환값으로 사용된다.**
 * **콜백함수의 생성에 사용된다**
 
 
@@ -79,12 +79,10 @@ console.log(innerFunc()); //innerFunc is not defined
 ```
 
 * **특정 함수에서만 사용할 기능이라면 전역 스코프에 함수를 구현하지 않고, 특정 함수 내부에 구현할 수 있다.**
-* **함수 스코프로 변수의 스코프가 이루어지므로, 내부 함수에서는 내부에 정의된 변수에 접근할 수 있다.**
+* **함수 스코프로 변수의 스코프가 이루어지므로, 내부 함수에서는 외부 함수에 정의된 변수에 접근할 수 있다.**
 * **일반적으로 특정 함수의 외부에서는 그 안에 구현된 내장 함수에 접근할 수 없다.**
 
-### 내장함수를 함수 스코프 외부에서 호출
-
-위에서 일반적으로 **일반적으로 특정 함수의 외부에서는 그 안에 구현된 내장 함수에 접근할 수 없다.** 라고 했는데, 외부에서 내장 함수를 호출하기 위해선 다음과 같이 구현할 수 있다.
+### 클로저
 
 ```javascript
 function outerFunc() {
@@ -100,7 +98,7 @@ function outerFunc() {
 var inner = outerFunc();
 inner(); //11
 ```
-이와 같이, 실행이 끝난 outerFunc()와 같은 부모 함수의 스코프 내에 있는 변수를 참조하는 inner()와 같은 함수를 **클로저**라고 한다.
+이와 같이, 실행이 끝난 outerFunc()와 같은 부모 함수의 스코프 내에 있는 변수를 참조하는 inner()와 같은 함수를 [클로저](https://bkdevlog.netlify.com/posts/closure-of-js)라고 한다.
 
 
 
@@ -140,8 +138,8 @@ function doSomething(x) {
   console.log("moduleFunction - a :" , x);
 }
 
-moduleFunction.sayHello();
-doSomething(moduleFunction.a);
+moduleFunction.sayHello(); //Hello
+doSomething(moduleFunction.a); //moduleFunction - a : 3
 ```
 
 <br/>
