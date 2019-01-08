@@ -155,7 +155,7 @@ str.printStr('This is the test'); //Uncaught TypeError: str.printStr is not a fu
 
 그렇다면, 위에서 str 변수에 printStr 메서드를 동적으로 추가하는 코드에서는 왜 에러가 발생하지 않을까?
 
-그 이유는 **기본 데이터 타입로 프로퍼티나 메소드를 호출하면 기본 데이터 타입과 연관된 객체로 일시적으로 변환되어 프로토타입 객체를 공유하게 되기 때문**이다.
+그 이유는 **기본 데이터 타입으로 프로퍼티나 메소드를 호출하면 기본 데이터 타입과 연관된 객체로 일시적으로 변환되어 프로토타입 객체를 공유하게 되기 때문**이다.
 
 ```javascript
 var str = 'hello world';
@@ -181,6 +181,8 @@ console.log(String.prototype.__proto__ === Object.prototype); //2.true
 console.log(String.prototype.constructor === String); //3.true
 console.log(String.__proto__ === Function.prototype); //4.true
 console.log(Function.prototype.__proto__ === Object.prototype); //5.true
+
+str.printStr('This is the test'); //This is the test
 ```
 
 
@@ -222,13 +224,13 @@ console.log(android.constructor); //Object()
 
 
 
-**프로토타입 객체를 변경하기 전,** web객체의 constructor는 프로토타입 체이닝에 따라 **`Developer()`생성자 함수**를 가리킨다.
+**프로토타입 객체를 변경하기 전,** web객체의 `constructor`는 프로토타입 체이닝에 따라 **`Developer()`생성자 함수**를 가리킨다.
 
-**프로토타입 객체를 변경한 후,** android객체의 constructor는 **`Object()` 함수**를 가리킨다.
+**프로토타입 객체를 변경한 후,** android객체의 `constructor`는 **`Object()` 함수**를 가리킨다.
 
-프로토타입 객체가 변경되면서 **Developer.prototype 객체의 constructor 프로퍼티와 Developer() 생성자 함수의 연결이 깨진다.**
+프로토타입 객체가 변경되면서 **`Developer.prototype` 객체의 `constructor` 프로퍼티와 `Developer()` 생성자 함수의 연결이 깨진다.**
 
-이에 따라 **프로토타입 체인이 동작하고** android 객체의 constructor는 `Object.prototype` 객체의 constructor 프로퍼티가 가리키는 **`Object()` 함수**가 되는 것이다.
+이에 따라 **프로토타입 체인이 동작하고** android 객체의 `constructor`는 `Object.prototype` 객체의 `constructor` 프로퍼티가 가리키는 **`Object()` 함수**가 되는 것이다.
 
 
 

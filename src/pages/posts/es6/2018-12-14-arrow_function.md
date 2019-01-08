@@ -24,7 +24,7 @@ const foo = () => {...} //매개변수가 없을 때
 const foo = x => {...} //매개변수가 하나일 때
 const foo = (x, y) => {...} //매개변수가 여러 개일 때
 
-const foo = x =  => { return x; }
+const foo = x => { return x; }
 const foo = x => x; // 함수의 블록이 한줄이라면 중괄호와 return을 생략
 
 const sum = (x, y) => {
