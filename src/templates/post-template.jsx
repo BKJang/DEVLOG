@@ -11,6 +11,9 @@ class PostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const { title: postTitle, description: postDescription } = post.frontmatter
     const description = postDescription !== null ? postDescription : subtitle
+    const tags = post.frontmatter.tags.map((item) => { 
+      return tags ? `${tags}, ${item}` : `${item}`;
+    });
 
     return (
       <Layout>
@@ -19,6 +22,8 @@ class PostTemplate extends React.Component {
             <title>{`${postTitle} - ${title}`}</title>
             <meta name="description" content={description} />
             <meta name="google-site-verification" content={searchConsole} />
+            <meta name="keywords" content={tags} />
+            <meta name="robots" content="index,follow" />
             <link rel="shortcut icon" href={favicon} />
           </Helmet>
           <PostTemplateDetails {...this.props} />

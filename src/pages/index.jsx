@@ -14,14 +14,16 @@ class IndexRoute extends React.Component {
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
-
+    console.log(posts);
     return (
       <Layout>
         <div>
           <Helmet>
             <title>{title}</title>
+            <meta name="title" content={title} />
             <meta name="description" content={subtitle} />
             <meta name="google-site-verification" content={searchConsole} />
+            <meta name="robots" content="index,follow" />
             <link rel="shortcut icon" href={favicon} />
           </Helmet>
           <Sidebar {...this.props} />
@@ -76,6 +78,7 @@ export const pageQuery = graphql`
             date
             category
             description
+            tags
           }
         }
       }
