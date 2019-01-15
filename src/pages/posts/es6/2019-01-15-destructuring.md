@@ -14,13 +14,13 @@ category: 'ES6'
 
 ## 디스트럭처링
 
-디스트럭처링은 **구조화된 배열 혹은 객체를 분해하여 변수에 할당**하는 방식이다. 이 개념을 몰랐더라도 React를 사용해봤던 개발자라면 아마 많이 봤을 문법이다.
+디스트럭처링은 **구조화된 배열 혹은 객체를 분해하여 변수에 할당**하는 방식이다. 이 개념을 몰랐더라도 `React`를 사용해봤던 개발자라면 아마 많이 봤을 문법이다.
 
 ```js
 const { state } = this.props;
 ```
 
-오른쪽의 특정 값을 해체하여 왼쪽에 할당하는 표현식을 **Destructuring Assignment**라고 한다.
+오른쪽의 특정 값을 해체하여 왼쪽에 할당하는 표현식을 **`Destructuring Assignment`**라고 한다.
 
 ## 배열 디스트럭처링
 
@@ -52,7 +52,7 @@ let [x, y, ,z] = numArr;
 console.log(x, y, z); //1 2 4
 ```
 
-위의 결과를 보면 알 수 있듯이 배열을 디스트럭처링하면 각각의 변수에 배열의 index를 기준으로 할당된다.
+위의 결과를 보면 알 수 있듯이 배열을 디스트럭처링하면 각각의 변수에 배열의 `index`를 기준으로 할당된다.
 
 디스트럭처링을 사용했을 때 편한 대표적인 예는 **변수의 swap처리**를 할 때다.
 
@@ -188,7 +188,7 @@ doSomething('BKJang', null); //BKJang은 FullStack개발자입니다.
 console.log(doSomething.length); //1
 ```
 
-자바스크립트에서 함수는 `length`프로퍼티를 가지는데 인자의 갯수를 나타낸다.<br/>`Default Parameter`는 이 `length`프로퍼티에 포함되지 않는다.
+자바스크립트에서 함수는 `length`프로퍼티를 가지는데 인자의 갯수를 나타낸다.<br/>**`Default Parameter`는 이 `length`프로퍼티에 포함되지 않는다.**
 
 <br/>
 
