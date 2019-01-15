@@ -4,6 +4,7 @@ title:  "[ES6] 3. 화살표 함수(Arrow Function)"
 date:   2018-12-14
 description: "ES6의 화살표 함수에 대해서"
 tags:
+- javascript
 - es6
 - arrow function
 draft: false

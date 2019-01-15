@@ -4,6 +4,7 @@ title:  "[ES6] 1. let과 const"
 date:   2018-11-24
 description: "ES6의 let과 const에 대해서"
 tags:
+- javascript
 - es6
 - let
 - const

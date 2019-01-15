@@ -4,6 +4,7 @@ title:  "[ES6] 2. 템플릿 리터럴(Template Literal)"
 date:   2018-12-09
 description: "ES6의 Template Literal에 대해서"
 tags:
+- javascript
 - es6
 - template literal
 draft: false

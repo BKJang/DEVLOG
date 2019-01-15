@@ -4,6 +4,7 @@ title:  "[ES6] 4. Spread 연산자와 rest 파라미터"
 date:   2018-12-27
 description: "ES6의 Spread 연산자와 Rest 파라미터에 대해서"
 tags:
+- javascript
 - es6
 - spread operator
 - rest parameter
