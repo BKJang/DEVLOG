@@ -216,5 +216,13 @@ module.exports = {
         precision: 8,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://bkdevlog.netlify.com',
+        sitemap: 'https://bkdevlog.netlify.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }
