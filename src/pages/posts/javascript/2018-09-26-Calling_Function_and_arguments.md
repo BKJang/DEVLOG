@@ -6,6 +6,7 @@ description: "함수의 호출과 arguments객체에 대해서"
 tags:
 - javascript
 - function
+- arguments
 draft: false
 path: '/posts/arguments-of-js'
 category: 'ES5'

@@ -5,6 +5,8 @@ date:   2018-10-19
 description: "chmod, chown에 대해서"
 tags:
 - linux
+- chmod
+- chown
 draft: false
 path: '/posts/ownership-permission'
 category: 'LINUX'

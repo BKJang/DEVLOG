@@ -6,6 +6,7 @@ description: "함수 객체에 대해서"
 tags:
 - javascript
 - function
+- function object
 draft: false
 path: '/posts/object-of-js'
 category: 'ES5'

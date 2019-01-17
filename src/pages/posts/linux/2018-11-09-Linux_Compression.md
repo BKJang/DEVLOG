@@ -5,6 +5,9 @@ date:   2018-11-09
 description: "gzip, bzip2, tar에 대해서"
 tags:
 - linux
+- gzip
+- bzip2
+- tar
 draft: false
 path: '/posts/compression'
 category: 'LINUX'

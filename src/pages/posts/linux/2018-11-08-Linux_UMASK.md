@@ -5,6 +5,7 @@ date:   2018-11-08
 description: "UMASK에 대해서"
 tags:
 - linux
+- umask
 draft: false
 path: '/posts/umask'
 category: 'LINUX'

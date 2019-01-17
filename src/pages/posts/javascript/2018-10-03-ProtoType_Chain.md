@@ -6,6 +6,7 @@ description: "프로토타입 체인에 대하여"
 tags:
 - javascript
 - prototype
+- prototype chain
 draft: false
 path: '/posts/prototypechain-of-js'
 category: 'ES5'

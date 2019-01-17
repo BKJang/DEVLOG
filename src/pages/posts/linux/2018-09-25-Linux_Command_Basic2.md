@@ -5,6 +5,9 @@ date:   2018-09-25
 description: "alias, cat, touch에 대해서"
 tags:
 - linux
+- alias
+- cat
+- touch
 draft: false
 path: '/posts/basic-command2'
 category: 'LINUX'

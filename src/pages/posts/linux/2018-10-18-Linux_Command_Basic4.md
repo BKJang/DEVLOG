@@ -5,6 +5,11 @@ date:   2018-10-18
 description: "cal, date, rdate, find, shutdown에 대해서"
 tags:
 - linux
+- cal
+- date
+- rdate
+- find
+- shutdown
 draft: false
 path: '/posts/basic-command4'
 category: 'LINUX'

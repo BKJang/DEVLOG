@@ -5,6 +5,10 @@ date:   2018-09-27
 description: "head, tail, more, nl에 대해서"
 tags:
 - linux
+- head
+- tail
+- more
+- nl
 draft: false
 path: '/posts/basic-command3'
 category: 'LINUX'

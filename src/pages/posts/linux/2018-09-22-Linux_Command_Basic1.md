@@ -5,6 +5,14 @@ date:   2018-09-22
 description: "pwd, cd, ls, cp, mv, mkdir, rmdir, rm에 대해서"
 tags:
 - linux
+- pwd
+- ls
+- cp
+- cd
+- mv
+- mkdir
+- rmdir
+- rm
 draft: false
 path: '/posts/basic-command1'
 category: 'LINUX'

@@ -5,6 +5,9 @@ date:   2018-10-30
 description: "SetUID, SetGid, Sticky bit에 대해서"
 tags:
 - linux
+- SetUID
+- SetGid
+- Sticky bit
 draft: false
 path: '/posts/special-autority'
 category: 'LINUX'

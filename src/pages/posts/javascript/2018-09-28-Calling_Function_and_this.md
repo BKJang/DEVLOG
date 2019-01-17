@@ -6,6 +6,7 @@ description: "함수의 호출 패턴과 this에 대해서"
 tags:
 - javascript
 - function
+- this
 draft: false
 path: '/posts/this-of-js'
 category: 'ES5'
