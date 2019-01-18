@@ -141,7 +141,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['roboto:400,400i,500,700'],
+        fonts: ['Noto Sans KR:400,400i,500,700'],
       },
     },
     {

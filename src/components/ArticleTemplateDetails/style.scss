@@ -78,6 +78,7 @@
         display: inline-block;
         margin: 10px 5px;
         &-link {
+          font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
           background: $color-gray-bg;
           text-decoration: none;
           border: 0;
@@ -110,6 +111,7 @@
     font-weight: 400;
     border-radius: 3px;
     @include margin-top(1);
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     &:hover,
     &:focus {
       color: $color-base;
