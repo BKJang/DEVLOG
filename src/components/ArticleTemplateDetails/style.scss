@@ -109,7 +109,7 @@
     color: lighten($color-base, 20%);
     background: $color-gray-bg;
     font-weight: 400;
-    border-radius: 3px;
+    border-radius: 3px; 
     @include margin-top(1);
     font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     &:hover,
