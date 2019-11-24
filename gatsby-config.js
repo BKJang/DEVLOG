@@ -13,7 +13,7 @@ module.exports = {
       {
         label: 'All Posts',
         path: '/',
-        subItem : [
+        subItem: [
           {
             label: 'JavaScript',
             path: '/javascript',
@@ -32,14 +32,14 @@ module.exports = {
         label: 'Articles',
         path: '/articles/',
       },
-      {
-        label: 'TIL',
-        path: '/til/',
-      },
-      {
-        label: 'About me',
-        path: '/about/',
-      },
+      // {
+      //   label: 'TIL',
+      //   path: '/til/',
+      // },
+      // {
+      //   label: 'About me',
+      //   path: '/about/',
+      // },
     ],
     author: {
       name: 'BKJang',
