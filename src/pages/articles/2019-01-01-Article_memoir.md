@@ -5,7 +5,7 @@ date:   2019-01-01
 description: "2018년을 되돌아보며"
 tags:
 - Articles
-path: '/articles/memoir'
+path: '/articles/memoir_2018'
 category: 'MEMOIR'
 ---
 
