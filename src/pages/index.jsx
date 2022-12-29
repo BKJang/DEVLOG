@@ -25,6 +25,8 @@ class IndexRoute extends React.Component {
             <meta name="google-site-verification" content={searchConsole} />
             <meta name="robots" content="index,follow" />
             <link rel="shortcut icon" href={favicon} />
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2417164259725538"
+     crossorigin="anonymous"></script>
           </Helmet>
           <Sidebar {...this.props} />
           <div className="content">
